@@ -4,7 +4,10 @@ import { createClient } from '@supabase/supabase-js';
 
 const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
-  httpAgent: new HttpsProxyAgent('http://127.0.0.1:10809'),
+  // Only use proxy in local development (when NODE_ENV is not production)
+  ...(process.env.NODE_ENV !== 'production' && {
+    httpAgent: new HttpsProxyAgent('http://127.0.0.1:10809'),
+  }),
 });
 
 // Initialize Supabase client (server-side)
