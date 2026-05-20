@@ -41,6 +41,7 @@ const categoryIcon = {
 export default function Home() {
   const [code, setCode]               = useState('')
   const [language, setLanguage]       = useState('javascript')
+  const [outputLang, setOutputLang]   = useState('en') // 'en' or 'zh'
   const [result, setResult]           = useState(null)
   const [loading, setLoading]         = useState(false)
   const [error, setError]             = useState(null)
@@ -138,7 +139,7 @@ export default function Home() {
           'Content-Type': 'application/json',
           ...(token && { Authorization: `Bearer ${token}` })
         },
-        body: JSON.stringify({ code, language })
+        body: JSON.stringify({ code, language, outputLang })
       })
       const data = await res.json()
       if (!res.ok) {
@@ -252,12 +253,21 @@ export default function Home() {
           {/* 卡片顶部工具栏 */}
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '10px 14px', borderBottom: `1px solid ${C.border}`, background: C.bgSub }}>
             <span style={{ fontSize: 12, fontWeight: 500, color: C.textSub }}>Paste code</span>
-            <select value={language} onChange={e => setLanguage(e.target.value)}
-              style={{ background: C.bg, border: `1px solid ${C.border}`, borderRadius: 6, color: C.text, fontSize: 12, padding: '3px 8px', outline: 'none', cursor: 'pointer' }}>
-              {['javascript','typescript','python','java','go','rust','php','ruby','css','html'].map(l => (
-                <option key={l} value={l}>{l}</option>
-              ))}
-            </select>
+            <div style={{ display: 'flex', gap: 8 }}>
+              {/* Output Language Selector */}
+              <select value={outputLang} onChange={e => setOutputLang(e.target.value)}
+                style={{ background: C.bg, border: `1px solid ${C.border}`, borderRadius: 6, color: C.text, fontSize: 12, padding: '3px 8px', outline: 'none', cursor: 'pointer' }}>
+                <option value="en">🇬🇧 English</option>
+                <option value="zh">🇨🇳 中文</option>
+              </select>
+              {/* Code Language Selector */}
+              <select value={language} onChange={e => setLanguage(e.target.value)}
+                style={{ background: C.bg, border: `1px solid ${C.border}`, borderRadius: 6, color: C.text, fontSize: 12, padding: '3px 8px', outline: 'none', cursor: 'pointer' }}>
+                {['javascript','typescript','python','java','go','rust','php','ruby','css','html'].map(l => (
+                  <option key={l} value={l}>{l}</option>
+                ))}
+              </select>
+            </div>
           </div>
 
           {/* 代码输入区 */}
