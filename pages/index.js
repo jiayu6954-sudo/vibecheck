@@ -49,6 +49,10 @@ export default function Home() {
   const [magicSent, setMagicSent]     = useState(false)
   const [usageCount, setUsageCount]   = useState(0)
   const [authLoading, setAuthLoading] = useState(true)
+  const [userPlan, setUserPlan]       = useState('free')
+  const [inviteCode, setInviteCode]   = useState('')
+  const [redeemLoading, setRedeemLoading] = useState(false)
+  const [redeemMessage, setRedeemMessage] = useState(null)
   const FREE_LIMIT = 3
 
   useEffect(() => {
@@ -70,6 +74,43 @@ export default function Home() {
       .from('user_usage').select('scan_count')
       .eq('user_id', u.id).eq('date', today).single()
     setUsageCount(data?.scan_count ?? 0)
+
+    // Fetch user plan
+    const { data: profile } = await supabase
+      .from('profiles').select('plan')
+      .eq('id', u.id).single()
+    setUserPlan(profile?.plan ?? 'free')
+  }
+
+  async function redeemInviteCode() {
+    if (!inviteCode.trim() || redeemLoading) return
+    setRedeemLoading(true)
+    setRedeemMessage(null)
+
+    try {
+      const res = await fetch('/api/redeem-code', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          code: inviteCode.trim().toUpperCase(),
+          userId: user.id
+        })
+      })
+      const data = await res.json()
+
+      if (data.success) {
+        setRedeemMessage({ type: 'success', text: '🎉 Pro plan activated! You now have unlimited scans.' })
+        setUserPlan('pro')
+        setInviteCode('')
+        setTimeout(() => setRedeemMessage(null), 5000)
+      } else {
+        setRedeemMessage({ type: 'error', text: data.error || 'Invalid invite code' })
+      }
+    } catch (err) {
+      setRedeemMessage({ type: 'error', text: 'Failed to redeem code. Please try again.' })
+    } finally {
+      setRedeemLoading(false)
+    }
   }
 
   async function sendMagicLink() {
@@ -164,8 +205,9 @@ export default function Home() {
     </div>
   )
 
-  const remaining = Math.max(0, FREE_LIMIT - usageCount)
-  const limitReached = usageCount >= FREE_LIMIT || error === 'LIMIT_REACHED'
+  const isPro = userPlan === 'pro'
+  const remaining = isPro ? '∞' : Math.max(0, FREE_LIMIT - usageCount)
+  const limitReached = !isPro && (usageCount >= FREE_LIMIT || error === 'LIMIT_REACHED')
 
   // ── 主界面 ──
   return (
@@ -178,11 +220,18 @@ export default function Home() {
           <span style={{ fontSize: 15, fontWeight: 600, color: C.text }}>VibeCheck</span>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
-          {/* 剩余次数 */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: 5, background: C.bgSub, border: `1px solid ${C.border}`, borderRadius: 20, padding: '4px 12px' }}>
-            <span style={{ fontSize: 12 }}>{remaining === 0 ? '🔴' : '🟢'}</span>
-            <span style={{ fontSize: 12, color: C.textSub }}>{remaining} scan{remaining !== 1 ? 's' : ''} left today</span>
-          </div>
+          {/* Plan badge */}
+          {isPro ? (
+            <div style={{ display: 'flex', alignItems: 'center', gap: 5, background: C.greenDim, border: `1px solid ${C.greenBorder}`, borderRadius: 20, padding: '4px 12px' }}>
+              <span style={{ fontSize: 12 }}>✨</span>
+              <span style={{ fontSize: 12, color: C.green, fontWeight: 500 }}>Pro · Unlimited</span>
+            </div>
+          ) : (
+            <div style={{ display: 'flex', alignItems: 'center', gap: 5, background: C.bgSub, border: `1px solid ${C.border}`, borderRadius: 20, padding: '4px 12px' }}>
+              <span style={{ fontSize: 12 }}>{remaining === 0 ? '🔴' : '🟢'}</span>
+              <span style={{ fontSize: 12, color: C.textSub }}>{remaining} scan{remaining !== 1 ? 's' : ''} left today</span>
+            </div>
+          )}
           <span style={{ fontSize: 12, color: C.textMuted }}>{user.email}</span>
           <button onClick={signOut} style={{ fontSize: 12, color: C.textSub, background: 'none', border: `1px solid ${C.border}`, borderRadius: 6, padding: '4px 10px', cursor: 'pointer', fontFamily: 'inherit' }}>Sign out</button>
         </div>
@@ -235,19 +284,41 @@ export default function Home() {
           <div style={{ background: C.redDim, border: `1px solid ${C.red}30`, borderRadius: 8, padding: '11px 14px', marginBottom: 14, fontSize: 13, color: C.red }}>{error}</div>
         )}
 
-        {/* 限流提示 */}
+        {/* 限流提示 + 邀请码 */}
         {limitReached && (
           <div style={{ background: C.bg, border: `1px solid ${C.border}`, borderRadius: 12, padding: '24px', marginBottom: 16, textAlign: 'center' }}>
             <div style={{ fontSize: 13, fontWeight: 600, color: C.text, marginBottom: 6 }}>You've used all 3 free scans today</div>
             <p style={{ fontSize: 13, color: C.textSub, marginBottom: 20, lineHeight: 1.6 }}>
-              Upgrade to Pro for unlimited scans, full fix suggestions, and 30-day history.<br/>
-              One security fix alone saves $800+. Pro is $15/month.
+              Come back tomorrow or unlock unlimited scans with an invite code.
             </p>
-            <button style={{ background: C.green, color: '#fff', border: 'none', borderRadius: 8, padding: '10px 24px', fontSize: 14, fontWeight: 500, cursor: 'pointer', marginRight: 8, fontFamily: 'inherit' }}>
-              Upgrade to Pro — $15/mo
-            </button>
-            <button onClick={() => { setError(null) }} style={{ background: 'none', border: `1px solid ${C.border}`, borderRadius: 8, padding: '10px 16px', fontSize: 13, color: C.textSub, cursor: 'pointer', fontFamily: 'inherit' }}>
-              Maybe later
+
+            {/* 邀请码输入 */}
+            <div style={{ maxWidth: 360, margin: '0 auto 20px' }}>
+              <div style={{ display: 'flex', gap: 8 }}>
+                <input
+                  type="text"
+                  placeholder="Enter invite code"
+                  value={inviteCode}
+                  onChange={e => setInviteCode(e.target.value.toUpperCase())}
+                  onKeyDown={e => e.key === 'Enter' && redeemInviteCode()}
+                  style={{ flex: 1, padding: '10px 12px', border: `1px solid ${C.border}`, borderRadius: 8, fontSize: 13, color: C.text, outline: 'none', fontFamily: 'inherit', textAlign: 'center', letterSpacing: '0.5px' }}
+                />
+                <button
+                  onClick={redeemInviteCode}
+                  disabled={!inviteCode.trim() || redeemLoading}
+                  style={{ padding: '10px 20px', background: inviteCode.trim() && !redeemLoading ? C.green : C.bgHover, color: inviteCode.trim() && !redeemLoading ? '#fff' : C.textMuted, border: 'none', borderRadius: 8, fontSize: 13, fontWeight: 500, cursor: inviteCode.trim() && !redeemLoading ? 'pointer' : 'not-allowed', fontFamily: 'inherit' }}>
+                  {redeemLoading ? '...' : 'Redeem'}
+                </button>
+              </div>
+              {redeemMessage && (
+                <div style={{ marginTop: 12, padding: '8px 12px', background: redeemMessage.type === 'success' ? C.greenDim : C.redDim, border: `1px solid ${redeemMessage.type === 'success' ? C.greenBorder : C.red + '30'}`, borderRadius: 6, fontSize: 12, color: redeemMessage.type === 'success' ? C.green : C.red }}>
+                  {redeemMessage.text}
+                </div>
+              )}
+            </div>
+
+            <button onClick={() => { setError(null) }} style={{ background: 'none', border: `1px solid ${C.border}`, borderRadius: 8, padding: '8px 16px', fontSize: 13, color: C.textSub, cursor: 'pointer', fontFamily: 'inherit' }}>
+              I'll wait until tomorrow
             </button>
           </div>
         )}
