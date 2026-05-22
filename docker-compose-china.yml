@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  vibecheck:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: vibecheck-app
+    ports:
+      - "3000:3000"
+    environment:
+      # 从 .env.local 文件读取（朋友需要自己创建）
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - NEXT_PUBLIC_SUPABASE_URL=${NEXT_PUBLIC_SUPABASE_URL}
+      - NEXT_PUBLIC_SUPABASE_ANON_KEY=${NEXT_PUBLIC_SUPABASE_ANON_KEY}
+      - NODE_ENV=production
+    restart: unless-stopped
+    networks:
+      - vibecheck-network
+    # 使用国内镜像加速（可选）
+    # image: registry.cn-hangzhou.aliyuncs.com/vibecheck/app:latest
+
+networks:
+  vibecheck-network:
+    driver: bridge
