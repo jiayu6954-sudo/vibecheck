@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  # VibeCheck 应用
+  vibecheck:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - NEXT_PUBLIC_SUPABASE_URL=${NEXT_PUBLIC_SUPABASE_URL}
+      - NEXT_PUBLIC_SUPABASE_ANON_KEY=${NEXT_PUBLIC_SUPABASE_ANON_KEY}
+    depends_on:
+      - postgres
+    networks:
+      - vibecheck-network
+
+  # 本地 PostgreSQL（替代 Supabase）
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_DB=vibecheck
+      - POSTGRES_USER=vibecheck
+      - POSTGRES_PASSWORD=vibecheck_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./supabase-schema.sql:/docker-entrypoint-initdb.d/01-schema.sql
+      - ./supabase-invite-codes.sql:/docker-entrypoint-initdb.d/02-invite-codes.sql
+    networks:
+      - vibecheck-network
+
+volumes:
+  postgres-data:
+
+networks:
+  vibecheck-network:
+    driver: bridge

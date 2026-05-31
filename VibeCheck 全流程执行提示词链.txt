@@ -1,0 +1,213 @@
+VibeCheck 全流程执行提示词链
+先回答你的问题：先从国内还是国外开始？
+明确建议：先从国外英文市场起步，在国内做幕后指挥。
+
+原因很简单：
+
+搭建面向全球的产品，Vercel + Stripe + Reddit 没有地理限制。
+
+国外市场支付链路成熟（Stripe 零开发成本）、目标用户聚集（r/vibecoding 8.9 万人）、有明确付费习惯，是完成 PMF 验证 的最低摩擦选择。
+
+一旦国外跑通付费闭环（哪怕 MRR 只有 $200），你再用同一个技术底座、替换国内 API 和支付，复刻到国内，就是第二增长曲线。
+
+国内先跑会面临 ICP 备案、支付资质、用户冷启动分散等额外摩擦，不适合“先验证再做大”的独立开发者节奏。
+
+所以你的最优路径是：
+
+以全球英文市场为第一战场，完成验证和最初现金流 → 同步搭建国内 API 适配层 → 第 8 周后以成熟的付费模型开辟国内版。
+
+下面所有的提示词，都是按这个路径设计的。
+
+提示词工程：VibeCheck 全流程执行
+使用说明
+将以下每个方框内的内容完整复制，作为一次指令发送给 AI 助手（如 Claude、ChatGPT、或你自己的 IDE 内的 AI 伙伴）。每次得到满意产出后，再复制下一条。
+
+提示词 1：初始化项目骨架
+text
+你是一位全栈工程师。请在本地为我搭建 VibeCheck 的最小可行产品骨架。
+要求：
+1. 使用 Next.js 14（App Router 或 Pages Router 均可，推荐 Pages Router 以便快速上手）
+2. 使用 Tailwind CSS
+3. 包含一个主页面 `pages/index.js`：
+   - 一个大的代码输入框（textarea）
+   - 一个“扫描代码”按钮
+   - 一个结果展示区域（默认隐藏，扫描后显示）
+   - 一个简易的每日免费次数限制（3次），用 localStorage 实现
+4. 包含一个 API 路由 `pages/api/scan.js`：
+   - 接收 POST 请求，body 含 `{ code: string }`
+   - 使用 Anthropic Claude API (Sonnet 4) 进行扫描
+   - 提示词必须强制返回如下 JSON 结构：
+     {
+       "score": 0-100,
+       "issues": [
+         {
+           "severity": "critical|high|medium|low",
+           "type": "security|maintainability|performance",
+           "title": "10字以内标题",
+           "plain_english": "人话解释",
+           "line_hint": "大致位置",
+           "fix": "具体修复代码示例"
+         }
+       ],
+       "summary": "两句话整体评价"
+     }
+   - 确保即使 Claude 返回了代码块包裹的 JSON 也能正确解析
+   - 做好错误处理，如果 API 失败返回合适的错误消息
+5. 添加 `.env.local` 文件示例，包含 `CLAUDE_API_KEY` 占位
+6. 整个项目能通过 `npm run dev` 直接启动，不要有任何其他未实现的依赖
+
+请生成完整的、可以直接复制的文件内容。每个文件单独列出。
+提示词 2：补充 Semgrep 轻量规则兜底（降低成本）
+text
+现在为我的 VibeCheck API 添加 Semgrep 规则扫描作为第一层过滤。
+1. 在项目根目录创建一个 `rules/` 文件夹，里面有至少 4 条自定义 Semgrep 规则，专门检测 AI 生成代码常见问题：
+   - 硬编码凭证（如 API Key、密码赋值）
+   - SQL 字符串拼接（可能导致注入）
+   - 使用 eval() 或 Function() 动态执行
+   - 过长的函数（超过80行，作为可维护性警告）
+2. 修改 `pages/api/scan.js`，使其逻辑变为：
+   - 先在服务器端用 semgrep CLI 对传入代码片段进行扫描（可在 API 内通过 `exec` 调用 `semgrep --config rules/ --json -` 并传递代码到标准输入）
+   - 如果 semgrep 发现 high/critical 问题，直接使用这些结果，不调用 Claude
+   - 如果没有严重问题，或者 Semgrep 无法确定（需要语义理解），再调用 Claude 做深度分析
+   - 最终返回结构保持原来的 JSON 格式，无论来自哪一层
+3. 确保 `semgrep` 安装在本地开发环境，并在代码中添加指导如何安装（brew install semgrep 或 pip install semgrep）
+4. 更新项目的依赖说明（README.md）
+
+请输出所有新增或修改的文件内容。
+提示词 3：添加 Supabase 认证和次数限制（后端硬限制）
+text
+现在为 VibeCheck 添加用户系统和后端每日次数硬限制，替代前端 localStorage 的软限制。
+1. 集成 Supabase：
+   - 使用 Supabase Auth（邮件密码模式）
+   - 在 Supabase 中创建一个 `scans` 表，字段包括：id, user_id, created_at, code_snippet（不存源码，只存一个哈希或前100字符作为审计）,  scan_result (JSONB)
+   - 创建一个 `subscriptions` 表：user_id, plan (free|pro), scans_today (整数), last_scan_date
+2. 修改 `pages/index.js`：
+   - 添加登录/注册表单（在扫描框上方，未登录状态下提示“登录后扫描”）
+   - 登录后显示用户邮箱和计划状态
+   - 按钮点击时调用 `/api/scan`，并附带用户的 access token
+3. 修改 `pages/api/scan.js`：
+   - 验证用户 token（从 Authorization 头中获取）
+   - 从数据库读取用户今日扫描次数，免费用户限制为 3 次/天，Pro 用户无限次（但限制每天最多 50 次以防滥用）
+   - 扫描成功后记录到 `scans` 表，更新 `subscriptions` 表中的计数
+   - 返回剩余次数信息给前端
+4. 添加 `lib/supabase.js` 初始化文件，使用环境变量 `NEXT_PUBLIC_SUPABASE_URL` 和 `NEXT_PUBLIC_SUPABASE_ANON_KEY` 以及 `SUPABASE_SERVICE_KEY`（仅后端用）
+5. 在 `.env.local.example` 中列出所需的 Supabase 相关环境变量
+
+请输出所有新增或修改的文件内容，并附上创建 Supabase 表所需的 SQL 语句。
+提示词 4：集成 Stripe 支付（$15/月 Pro）
+text
+为 VibeCheck 集成 Stripe 支付，实现 Pro 订阅。
+要求：
+1. 在 Stripe 后台创建一个 $15/月 的订阅产品（Product），并且有一个 $12/月 的早鸟价格（可以为前100名用户使用优惠券或价格 ID）。
+2. 创建一个 API 路由 `pages/api/stripe/checkout.js`：
+   - 接收当前登录用户的 user_id
+   - 调用 Stripe Checkout Session，设置 success_url 和 cancel_url
+   - 将 session URL 返回前端
+3. 创建一个 API 路由 `pages/api/stripe/webhook.js`：
+   - 监听 `checkout.session.completed` 事件
+   - 根据客户邮箱或 metadata 中的 user_id 找到 Supabase 中的用户，将其 plan 更新为 'pro'
+   - 处理订阅取消和续费事件（简要实现）
+4. 修改前端 `pages/index.js`：
+   - 如果用户是 free 计划，在扫描区域下方显示“升级 Pro”按钮
+   - 点击按钮调用 checkout API，然后跳转到 Stripe 支付页面
+5. 所有 Stripe 密钥使用环境变量 `STRIPE_SECRET_KEY` 和 `NEXT_PUBLIC_STRIPE_PRICE_ID`
+6. 添加简要的测试指导（如何使用 Stripe 测试卡）
+
+请输出所有新增或修改的文件内容。
+提示词 5：部署到 Vercel 及购买域名指南
+text
+请给我一份详细步骤指南，关于：
+1. 如何将当前的 Next.js 项目部署到 Vercel（关联 GitHub 仓库，自动部署）
+2. 如何设置 Vercel 环境变量（Supabase URL、Key、Stripe Secret、Claude Key 等）
+3. 如何在 Vercel 中配置自定义域名（包括 DNS 设置）
+4. 推荐一个适合 VibeCheck 的域名（未被注册的 .com 或 .io 后缀），并给出 5 个备选
+5. 上线前需要完成的检查清单（如确保 webhook URL 正确配置为生产地址）
+
+请以可以直接照着操作的格式给出答案。
+提示词 6：第一周 Reddit 验证帖（直接复制使用）
+text
+请根据我们之前的讨论，生成一个可直接发布到 Reddit r/vibecoding 的帖子。
+内容必须包括：
+- 一个引人注目的标题（关于分析 vibe-coded 项目的安全问题）
+- 正文分享个人真实经历（使用 AI 编程后发现问题）
+- 自然引出我正在构建的解决方案
+- 结尾呼吁感兴趣的人评论“interested”或 DM
+- 全程不要像广告，要以分享价值为主
+- 提供英文版本（面向国际市场）
+同时，请提供一个中文版本，方便我稍后在知乎或掘金使用。
+提示词 7：冷启动 DM 话术生成
+text
+请生成 3 套可以直接使用的冷启动私信话术，用于在 Reddit、Twitter/X、Indie Hackers 等平台上联系潜在用户。
+要求：
+- 第1套：针对在 r/vibecoding 发帖说 AI 代码有 bug 的用户
+- 第2套：针对在 Indie Hackers 展示自己用 AI 搭建项目的独立开发者
+- 第3套：针对在帖子下回复“interested”的用户的跟进消息
+每套话术要简短、个性化、非推销感，目的是邀请对方免费试用并给予反馈。
+同时提供一个中文版本，供国内社交媒体（知乎、即刻）使用。
+提示词 8：第 2 周收款验证——Figma 假截图推销
+text
+我现在要验证用户付费意愿，需要在没有任何代码的情况下展示产品界面，然后问他们是否愿意预付 $15 锁定早鸟价格。
+请帮我做两件事：
+1. 描述一个产品扫描结果的假界面设计，包含：
+   - 代码输入区域（已填好示例代码）
+   - 扫描结果展示区：健康分 67 分，3 个 issue（硬编码 API Key、SQL 注入风险、魔法数字）
+   - 每个 issue 附有人话解释和可展开的修复代码
+   - 底部有一个“升级 Pro 无限扫描”的按钮
+   请用详细的文字描述让我能在 Figma 中实现，或者直接用一个 HTML/Tailwind 静态页面来表示（我可以截图使用）
+2. 写一段我发送给之前表达兴趣的用户的推销消息，核心是：展示截图，邀请他们以 $12（原价 $15）预付锁定，提供终身早鸟价。要求语气真诚，以“我需要早期用户帮我打磨产品”为基调。
+请提供英文版和中文版。
+提示词 9：Product Hunt 和 Hacker News 发布策略
+text
+请为 VibeCheck 设计一套 Product Hunt 发布策略，包括：
+1. 产品标语（tagline）
+2. 产品描述（第一句话要抓人）
+3. 首个评论（我自己发的，解释为什么做这个产品）
+4. 制作 GIF/截图的清单（至少 4 张需要展示的界面）
+5. 发布时间选择建议（周几几点）
+6. 如何获取前 100 个 upvotes（动员朋友、社区等，符合平台规则）
+同时，为 Hacker News Show HN 准备一个帖子的标题和正文，强调“我为独立开发者做了这个，免费使用”。
+全部内容提供英文版本。
+提示词 10：扩展国内 API——智谱 GLM-4.7 集成
+text
+现在我的 VibeCheck 要支持国内市场，需要接入智谱 GLM-4.7 API 作为主要引擎，降低成本和延迟。
+请完成：
+1. 在 `pages/api/scan_glm.js`（或修改原 scan.js 添加路由逻辑）中实现以下功能：
+   - 判断请求头中的 `x-region` 或用户偏好，决定调用 Claude 还是智谱
+   - 智谱 API 调用方式：POST https://open.bigmodel.cn/api/paas/v4/chat/completions，使用 GLM-4.7 模型
+   - 使用与原来相同的系统提示词和用户提示词，但返回格式严格限定为 JSON（调整温度参数为 0.1，必要时在后处理中强制提取 JSON）
+2. 展示如何在我的 Vercel 环境中安全设置 `ZHIPU_API_KEY` 环境变量
+3. 建议一种简单的支付切换策略：当检测到用户来自中国 IP 或选择中文界面时，展示支付宝/微信支付选项（只需给出逻辑说明，不要求完整代码，因为涉及国内支付资质）
+4. 提供一个国内部署的简化方案说明（如何用阿里云函数计算 FC 部署 Next.js，替代 Vercel）
+请输出代码和说明文档。
+提示词 11：中文内容钓鱼帖生成（知乎/掘金）
+text
+请根据我们的产品 VibeCheck，生成一篇适合发布到知乎或掘金的技术文章。
+要求：
+1. 标题要抓人眼球，类似：“我扫描了 50 个用 Cursor 做的项目，发现这 5 种安全漏洞最常见”
+2. 文章结构：
+   - 开头：我的故事——作为一个独立开发者，我用 AI 工具写了很多代码，但一次意外发现硬编码的密钥后开始担忧
+   - 中段：分类讲解 5 种漏洞，每种都给出真实代码示例、风险、人话解释和修复方法
+   - 结尾：自然引出我正在开发的工具 VibeCheck，能自动做这些检查，目前免费试用
+3. 全文用流畅的中文，不要有翻译腔，要像一个真实的独立开发者在分享经验
+请输出文章全文。
+提示词 12：设置国内支付和微信小程序版本规划
+text
+请为我规划 VibeCheck 的国内支付接入和微信小程序版本。
+1. 支付方面：
+   - 推荐一个适合个人开发者的国内聚合支付服务商（如 PayJS、虎皮椒等），并说明接入步骤
+   - 设计国内版定价：建议入门版 9.9元/月，标准版 99元/月，并支持按次付费（0.99元/次）
+   - 如何在我的现有代码中通过环境变量切换 Stripe 和国内支付
+2. 微信小程序：
+   - 描述一个极简的微信小程序版本功能清单（只需粘贴代码、扫描、显示结果，无需登录即可免费试用 1 次）
+   - 小程序如何与我的后端 API 通信，并实现付费（通过微信支付）
+   - 小程序的审核注意事项（涉及 UGC 内容、支付等）
+3. 给出一个时间点建议：在国外 MRR 达到多少时开始投入资源做国内版？
+请以可行的执行建议形式输出，而非详细代码。
+执行规则
+严格按照顺序：每完成一条提示词的任务，再进入下一条。
+
+不要跳步：第 1-5 步是产品基础，第 6-8 步是市场验证，第 9 步是增长，第 10-12 步是扩展国内版。
+
+关键决策点：在执行完提示词 5（部署上线）并且提示词 8（收款验证）拿到至少 3 笔预付款后，再全力投入后续开发。
+
+若某一步验证失败（如 Reddit 帖子无人响应、没有人预付款），立即停止，回到提示词 6 调整定位或找到更精准的目标人群，而不是继续开发功能。

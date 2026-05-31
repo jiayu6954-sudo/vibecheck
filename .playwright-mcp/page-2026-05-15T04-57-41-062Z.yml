@@ -1,0 +1,507 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic:
+      - generic:
+        - heading "To view keyboard shortcuts, press question mark View keyboard shortcuts" [level=2] [ref=e3]:
+          - generic [ref=e4]: To view keyboard shortcuts, press question mark
+          - link "View keyboard shortcuts" [ref=e5] [cursor=pointer]:
+            - /url: /i/keyboard_shortcuts
+        - generic:
+          - generic:
+            - button "Grok" [ref=e6] [cursor=pointer]:
+              - img [ref=e7]
+            - button "Chat" [ref=e10] [cursor=pointer]:
+              - img [ref=e11]
+        - generic [ref=e14]:
+          - button "Skip to home timeline" [ref=e15] [cursor=pointer]
+          - button "Skip to trending" [ref=e17] [cursor=pointer]
+          - banner [ref=e19]:
+            - generic [ref=e21]:
+              - generic [ref=e22]:
+                - heading "X" [level=1] [ref=e24] [cursor=pointer]:
+                  - link "X" [ref=e25]:
+                    - /url: /home
+                    - img [ref=e27]
+                - navigation "Primary" [ref=e31]:
+                  - link "Home" [ref=e32] [cursor=pointer]:
+                    - /url: /home
+                    - generic [ref=e33]:
+                      - img [ref=e35]
+                      - generic [ref=e38]: Home
+                  - link "Search and explore" [ref=e39] [cursor=pointer]:
+                    - /url: /explore
+                    - generic [ref=e40]:
+                      - img [ref=e42]
+                      - generic [ref=e45]: Explore
+                  - link "Notifications (1 unread notification)" [ref=e46] [cursor=pointer]:
+                    - /url: /notifications
+                    - generic [ref=e47]:
+                      - generic [ref=e48]:
+                        - img [ref=e49]
+                        - generic "1 unread items" [ref=e52]:
+                          - generic [ref=e53]: "1"
+                      - generic [ref=e54]: Notifications
+                  - link "Follow" [ref=e55] [cursor=pointer]:
+                    - /url: /i/connect_people
+                    - generic [ref=e56]:
+                      - img [ref=e58]
+                      - generic [ref=e61]: Follow
+                  - link "Direct Messages" [ref=e62] [cursor=pointer]:
+                    - /url: /i/chat
+                    - generic [ref=e63]:
+                      - img [ref=e65]
+                      - generic [ref=e68]: Chat
+                  - link "Grok" [ref=e69] [cursor=pointer]:
+                    - /url: /i/grok
+                    - generic [ref=e70]:
+                      - generic [ref=e71]:
+                        - img [ref=e72]
+                        - generic "undefined unread items" [ref=e75]
+                      - generic [ref=e76]: Grok
+                  - link "Bookmarks" [ref=e77] [cursor=pointer]:
+                    - /url: /i/bookmarks
+                    - generic [ref=e78]:
+                      - img [ref=e80]
+                      - generic [ref=e83]: Bookmarks
+                  - link "Creator Studio" [ref=e84] [cursor=pointer]:
+                    - /url: /i/jf/creators/studio
+                    - generic [ref=e85]:
+                      - img [ref=e87]
+                      - generic [ref=e91]: Creator Studio
+                  - link "Premium" [ref=e92] [cursor=pointer]:
+                    - /url: /i/premium_sign_up
+                    - generic [ref=e93]:
+                      - img [ref=e95]
+                      - generic [ref=e98]: Premium
+                  - link "Profile" [ref=e99] [cursor=pointer]:
+                    - /url: /jiayu12090
+                    - generic [ref=e100]:
+                      - img [ref=e102]
+                      - generic [ref=e105]: Profile
+                  - button "More menu items" [ref=e106] [cursor=pointer]:
+                    - generic [ref=e107]:
+                      - img [ref=e109]
+                      - generic [ref=e112]: More
+                - link "Post" [ref=e114] [cursor=pointer]:
+                  - /url: /compose/post
+                  - generic [ref=e120]: Post
+              - button "Account menu" [ref=e123] [cursor=pointer]:
+                - generic [ref=e131]:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic "jiayu":
+                          - img "jiayu"
+                - generic [ref=e135]:
+                  - generic [ref=e139]: jiayu
+                  - generic [ref=e143]: "@jiayu12090"
+                - img [ref=e145]
+          - main [ref=e148]:
+            - generic [ref=e151]:
+              - generic "Home timeline" [ref=e153]:
+                - generic [ref=e154]:
+                  - generic [ref=e160] [cursor=pointer]:
+                    - button "Back" [ref=e162]:
+                      - img [ref=e164]
+                    - heading "Vibe Coding" [level=2] [ref=e169]
+                    - generic [ref=e171]:
+                      - link "Search Community" [ref=e172]:
+                        - /url: /i/communities/1898129646782497027/search
+                        - img "Search Community" [ref=e174]
+                      - button "More" [ref=e177]:
+                        - img [ref=e179]
+                  - generic:
+                    - generic:
+                      - status:
+                        - button:
+                          - generic:
+                            - img
+                            - generic: See new posts
+                - generic [ref=e182]:
+                  - generic [ref=e183]:
+                    - generic [ref=e192]:
+                      - generic [ref=e193]: Vibe Coding
+                      - button "Artificial Intelligence" [ref=e195] [cursor=pointer]:
+                        - generic [ref=e198]: Artificial Intelligence
+                      - generic [ref=e201]: fully give in to the vibes. forget that the code even exists.
+                      - generic [ref=e202]:
+                        - link "2.3K Members" [ref=e203] [cursor=pointer]:
+                          - /url: /i/communities/1898129646782497027/members
+                          - generic [ref=e257]:
+                            - generic [ref=e258]: 2.3K
+                            - generic [ref=e259]: Members
+                        - generic [ref=e260]:
+                          - button "Pin Community" [ref=e261] [cursor=pointer]:
+                            - img [ref=e263]
+                          - button "Share Community" [ref=e267] [cursor=pointer]:
+                            - img [ref=e269]
+                          - button "Join Vibe Coding" [ref=e274] [cursor=pointer]:
+                            - generic [ref=e277]: Join
+                    - navigation "Community Detail" [ref=e281]:
+                      - generic [ref=e282]:
+                        - generic:
+                          - button "Previous" [disabled]:
+                            - generic:
+                              - img
+                        - tablist [ref=e284]:
+                          - tab "Top" [selected] [ref=e285] [cursor=pointer]:
+                            - generic [ref=e288]: Top
+                          - tab "Latest" [ref=e290] [cursor=pointer]:
+                            - generic [ref=e293]: Latest
+                          - tab "Media" [ref=e294] [cursor=pointer]:
+                            - generic [ref=e297]: Media
+                          - tab "About" [ref=e298] [cursor=pointer]:
+                            - generic [ref=e301]: About
+                        - generic:
+                          - button "Next" [disabled]:
+                            - generic:
+                              - img
+                  - region "Community" [ref=e302]:
+                    - heading "Community" [level=1] [ref=e303]
+                    - 'generic "Timeline: Community" [ref=e304]':
+                      - generic [ref=e305]:
+                        - 'article "Pinned by Community mods Vibe Rubin Verified account @viberubin Apr 17 🚨 Announcement 🚨 Most vibe-coded apps are toys. VibeJam #3 is where that stops. Five days. Solo or teams of three. One rule: build something people will actually pay you for. No demoware, no \"look what I shipped in an afternoon\" screenshots that never see a second user. Image 2 replies, 1 repost, 10 likes, 1 bookmark, 2241 views" [ref=e309] [cursor=pointer]':
+                          - generic [ref=e311]:
+                            - generic [ref=e316]:
+                              - img [ref=e318]
+                              - generic [ref=e324]: Pinned by Community mods
+                            - generic [ref=e325]:
+                              - link [ref=e337]:
+                                - /url: /viberubin
+                              - generic [ref=e340]:
+                                - generic [ref=e342]:
+                                  - generic [ref=e345]:
+                                    - link "Vibe Rubin Verified account" [ref=e348]:
+                                      - /url: /viberubin
+                                      - generic [ref=e349]:
+                                        - generic [ref=e351]: Vibe Rubin
+                                        - img "Verified account" [ref=e354]
+                                    - generic [ref=e358]:
+                                      - link "@viberubin" [ref=e360]:
+                                        - /url: /viberubin
+                                        - generic [ref=e361]: "@viberubin"
+                                      - generic [ref=e362]: ·
+                                      - link "Apr 17" [ref=e364]:
+                                        - /url: /viberubin/status/2044869263601877062
+                                        - time [ref=e365]: Apr 17
+                                  - generic [ref=e367]:
+                                    - button "Grok actions" [ref=e369]:
+                                      - img [ref=e374]
+                                    - button "More" [ref=e380]:
+                                      - img [ref=e384]
+                                - generic [ref=e387]:
+                                  - generic [ref=e388]:
+                                    - img "🚨" [ref=e389]
+                                    - text: Announcement
+                                    - img "🚨" [ref=e390]
+                                    - text: "Most vibe-coded apps are toys. VibeJam #3 is where that stops. Five days. Solo or teams of three. One rule: build something people will actually pay you for. No demoware, no \"look what I shipped in an afternoon\" screenshots that never see a second user."
+                                  - button "Show more" [ref=e391]
+                                - link "Image" [ref=e399]:
+                                  - /url: /viberubin/status/2044869263601877062/photo/1
+                                  - generic "Image" [ref=e403]:
+                                    - img "Image" [ref=e405]
+                                - group "2 replies, 1 repost, 10 likes, 1 bookmark, 2241 views" [ref=e408]:
+                                  - button "2 Replies. Reply" [ref=e410]:
+                                    - generic [ref=e411]:
+                                      - img [ref=e414]
+                                      - generic [ref=e419]: "2"
+                                  - button "1 repost. Repost" [ref=e421]:
+                                    - generic [ref=e422]:
+                                      - img [ref=e425]
+                                      - generic [ref=e430]: "1"
+                                  - button "10 Likes. Like" [ref=e432]:
+                                    - generic [ref=e433]:
+                                      - img [ref=e436]
+                                      - generic [ref=e441]: "10"
+                                  - link "2241 views. View post analytics" [ref=e443]:
+                                    - /url: /viberubin/status/2044869263601877062/analytics
+                                    - generic [ref=e444]:
+                                      - img [ref=e447]
+                                      - generic [ref=e452]: 2.2K
+                                  - button "Bookmark" [ref=e454]:
+                                    - img [ref=e458]
+                                  - button "Share post" [ref=e463]:
+                                    - img [ref=e467]
+                        - 'article "EAZO AI @EazoAI 13 hours ago Over 1,000 creators have already jumped in. We were going to close soon, but the demand is wild — so we’re keeping registration open a little longer. EAZO Global Hackathon 2026 $300K prize pool. Zero code. Real products. Don’t wait. #AIHackathon #NoCode #NYCTech Image 3 replies, 1 like, 77 views" [ref=e473] [cursor=pointer]':
+                          - generic [ref=e479]:
+                            - link [ref=e491]:
+                              - /url: /EazoAI
+                            - generic [ref=e494]:
+                              - generic [ref=e496]:
+                                - generic [ref=e499]:
+                                  - link "EAZO AI" [ref=e502]:
+                                    - /url: /EazoAI
+                                    - generic [ref=e505]: EAZO AI
+                                  - generic [ref=e507]:
+                                    - link "@EazoAI" [ref=e509]:
+                                      - /url: /EazoAI
+                                      - generic [ref=e510]: "@EazoAI"
+                                    - generic [ref=e511]: ·
+                                    - link "13 hours ago" [ref=e513]:
+                                      - /url: /EazoAI/status/2054945766805033199
+                                      - time [ref=e514]: 13h
+                                - generic [ref=e516]:
+                                  - button "Grok actions" [ref=e518]:
+                                    - img [ref=e523]
+                                  - button "More" [ref=e529]:
+                                    - img [ref=e533]
+                              - generic [ref=e537]:
+                                - text: Over 1,000 creators have already jumped in. We were going to close soon, but the demand is wild — so we’re keeping registration open a little longer. EAZO Global Hackathon 2026 $300K prize pool. Zero code. Real products. Don’t wait.
+                                - link "#AIHackathon" [ref=e539]:
+                                  - /url: /i/communities/1898129646782497027/hashtag/AIHackathon
+                                - link "#NoCode" [ref=e541]:
+                                  - /url: /i/communities/1898129646782497027/hashtag/NoCode
+                                - link "#NYCTech" [ref=e543]:
+                                  - /url: /i/communities/1898129646782497027/hashtag/NYCTech
+                              - link "Image" [ref=e551]:
+                                - /url: /EazoAI/status/2054945766805033199/photo/1
+                                - generic "Image" [ref=e555]:
+                                  - img "Image" [ref=e557]
+                              - generic [ref=e559]:
+                                - img [ref=e560]
+                                - text: Made with AI
+                              - group "3 replies, 1 like, 77 views" [ref=e566]:
+                                - button "3 Replies. Reply" [ref=e568]:
+                                  - generic [ref=e569]:
+                                    - img [ref=e572]
+                                    - generic [ref=e577]: "3"
+                                - button "0 reposts. Repost" [ref=e579]:
+                                  - img [ref=e583]
+                                - button "1 Like. Like" [ref=e590]:
+                                  - generic [ref=e591]:
+                                    - img [ref=e594]
+                                    - generic [ref=e599]: "1"
+                                - link "77 views. View post analytics" [ref=e601]:
+                                  - /url: /EazoAI/status/2054945766805033199/analytics
+                                  - generic [ref=e602]:
+                                    - img [ref=e605]
+                                    - generic [ref=e610]: "77"
+                                - button "Bookmark" [ref=e612]:
+                                  - img [ref=e616]
+                                - button "Share post" [ref=e621]:
+                                  - img [ref=e625]
+                        - 'article "609.sol Verified account @609NFT May 14 Built VibeKit — an iOS app + Telegram bot that ships full-stack apps from your phone. How I built it: I was running an OpenClaw agent on an EC2 box that also hosted one of my projects. Drove the agent from Discord on my phone — chat in, code committed, deployed in place. vibekit.bot VibeKit — Every app gets its own AI agent. From vibekit.bot 2 replies, 2 likes, 1 bookmark, 155 views" [ref=e631] [cursor=pointer]':
+                          - generic [ref=e637]:
+                            - link [ref=e649]:
+                              - /url: /609NFT
+                            - generic [ref=e652]:
+                              - generic [ref=e654]:
+                                - generic [ref=e657]:
+                                  - link "609.sol Verified account" [ref=e660]:
+                                    - /url: /609NFT
+                                    - generic [ref=e661]:
+                                      - generic [ref=e663]: 609.sol
+                                      - img "Verified account" [ref=e666]
+                                  - generic [ref=e670]:
+                                    - link "@609NFT" [ref=e672]:
+                                      - /url: /609NFT
+                                      - generic [ref=e673]: "@609NFT"
+                                    - generic [ref=e674]: ·
+                                    - link "May 14" [ref=e676]:
+                                      - /url: /609NFT/status/2054774088779071949
+                                      - time [ref=e677]: May 14
+                                - generic [ref=e679]:
+                                  - button "Grok actions" [ref=e681]:
+                                    - img [ref=e686]
+                                  - button "More" [ref=e692]:
+                                    - img [ref=e696]
+                              - generic [ref=e699]:
+                                - generic [ref=e700]: "Built VibeKit — an iOS app + Telegram bot that ships full-stack apps from your phone. How I built it: I was running an OpenClaw agent on an EC2 box that also hosted one of my projects. Drove the agent from Discord on my phone — chat in, code committed, deployed in place."
+                                - button "Show more" [ref=e701]
+                              - generic "vibekit.bot VibeKit — Every app gets its own AI agent." [ref=e702]:
+                                - generic "vibekit.bot VibeKit — Every app gets its own AI agent." [ref=e703]:
+                                  - link "vibekit.bot VibeKit — Every app gets its own AI agent." [ref=e705]:
+                                    - /url: https://t.co/fL3P4Hmfxg
+                                    - generic [ref=e711]:
+                                      - generic:
+                                        - generic: VibeKit — Every app gets its own AI agent.
+                                - link "From vibekit.bot" [ref=e714]:
+                                  - /url: https://t.co/fL3P4Hmfxg
+                              - group "2 replies, 2 likes, 1 bookmark, 155 views" [ref=e717]:
+                                - button "2 Replies. Reply" [ref=e719]:
+                                  - generic [ref=e720]:
+                                    - img [ref=e723]
+                                    - generic [ref=e728]: "2"
+                                - button "0 reposts. Repost" [ref=e730]:
+                                  - img [ref=e734]
+                                - button "2 Likes. Like" [ref=e741]:
+                                  - generic [ref=e742]:
+                                    - img [ref=e745]
+                                    - generic [ref=e750]: "2"
+                                - link "155 views. View post analytics" [ref=e752]:
+                                  - /url: /609NFT/status/2054774088779071949/analytics
+                                  - generic [ref=e753]:
+                                    - img [ref=e756]
+                                    - generic [ref=e761]: "155"
+                                - button "Bookmark" [ref=e763]:
+                                  - img [ref=e767]
+                                - button "Share post" [ref=e772]:
+                                  - img [ref=e776]
+                        - article "blazemajor Verified account @blazemajorszn May 13 Hey fellow vibe coders! I have been vibe coding hard the last few months. Probably shipped a few dozen landing pages across Lovable, v0, Replit, Bolt, Google Stitch, Claude Design, you name it. And honestly, can we all agree that they basically generate the same site every Quote blazemajor Verified account @blazemajorszn May 13 We just killed AI Slop forever Every AI site builder gives you the same page. Same purple gradient. Same three feature cards. Same \"Get started now.\" It works. It just doesn't feel like anything. We made the one that has taste. Try it for free at zoroart.com Embedded video Play Video 1 reply, 5 likes, 232 views" [ref=e782] [cursor=pointer]:
+                          - generic [ref=e788]:
+                            - link [ref=e800]:
+                              - /url: /blazemajorszn
+                            - generic [ref=e803]:
+                              - generic [ref=e805]:
+                                - generic [ref=e808]:
+                                  - link "blazemajor Verified account" [ref=e811]:
+                                    - /url: /blazemajorszn
+                                    - generic [ref=e812]:
+                                      - generic [ref=e814]: blazemajor
+                                      - img "Verified account" [ref=e817]
+                                  - generic [ref=e821]:
+                                    - link "@blazemajorszn" [ref=e823]:
+                                      - /url: /blazemajorszn
+                                      - generic [ref=e824]: "@blazemajorszn"
+                                    - generic [ref=e825]: ·
+                                    - link "May 13" [ref=e827]:
+                                      - /url: /blazemajorszn/status/2054538873288401054
+                                      - time [ref=e828]: May 13
+                                - generic [ref=e830]:
+                                  - button "Grok actions" [ref=e832]:
+                                    - img [ref=e837]
+                                  - button "More" [ref=e843]:
+                                    - img [ref=e847]
+                              - generic [ref=e850]:
+                                - generic [ref=e851]: Hey fellow vibe coders! I have been vibe coding hard the last few months. Probably shipped a few dozen landing pages across Lovable, v0, Replit, Bolt, Google Stitch, Claude Design, you name it. And honestly, can we all agree that they basically generate the same site every
+                                - button "Show more" [ref=e852]
+                              - generic "Quote blazemajor Verified account @blazemajorszn May 13 We just killed AI Slop forever Every AI site builder gives you the same page. Same purple gradient. Same three feature cards. Same \"Get started now.\" It works. It just doesn't feel like anything. We made the one that has taste. Try it for free at zoroart.com Embedded video Play Video" [ref=e853]:
+                                - generic [ref=e854]:
+                                  - generic [ref=e855]: Quote
+                                  - link "blazemajor Verified account @blazemajorszn May 13 We just killed AI Slop forever Every AI site builder gives you the same page. Same purple gradient. Same three feature cards. Same \"Get started now.\" It works. It just doesn't feel like anything. We made the one that has taste. Try it for free at zoroart.com Embedded video Play Video" [ref=e856]:
+                                    - generic [ref=e857]:
+                                      - generic [ref=e875]:
+                                        - generic [ref=e879]:
+                                          - generic [ref=e881]: blazemajor
+                                          - img "Verified account" [ref=e884]
+                                        - generic [ref=e888]:
+                                          - generic [ref=e891]: "@blazemajorszn"
+                                          - generic [ref=e892]: ·
+                                          - generic "May 13" [ref=e895]:
+                                            - time [ref=e896]: May 13
+                                      - generic [ref=e898]:
+                                        - text: We just killed AI Slop forever Every AI site builder gives you the same page. Same purple gradient. Same three feature cards. Same "Get started now." It works. It just doesn't feel like anything. We made the one that has taste. Try it for free at
+                                        - generic [ref=e899]: zoroart.com
+                                      - generic [ref=e914]:
+                                        - generic "Embedded video" [ref=e917]
+                                        - button "Play Video" [ref=e924]:
+                                          - img [ref=e925]
+                              - group "1 reply, 5 likes, 232 views" [ref=e931]:
+                                - button "1 Reply. Reply" [ref=e933]:
+                                  - generic [ref=e934]:
+                                    - img [ref=e937]
+                                    - generic [ref=e942]: "1"
+                                - button "0 reposts. Repost" [ref=e944]:
+                                  - img [ref=e948]
+                                - button "5 Likes. Like" [ref=e955]:
+                                  - generic [ref=e956]:
+                                    - img [ref=e959]
+                                    - generic [ref=e964]: "5"
+                                - link "232 views. View post analytics" [ref=e966]:
+                                  - /url: /blazemajorszn/status/2054538873288401054/analytics
+                                  - generic [ref=e967]:
+                                    - img [ref=e970]
+                                    - generic [ref=e975]: "232"
+                                - button "Bookmark" [ref=e977]:
+                                  - img [ref=e981]
+                                - button "Share post" [ref=e986]:
+                                  - img [ref=e990]
+              - generic "Trending" [ref=e997]:
+                - generic [ref=e998]:
+                  - search "Search" [ref=e1003]:
+                    - generic [ref=e1008]:
+                      - img [ref=e1010]
+                      - combobox "Search query" [ref=e1015]
+                  - generic [ref=e1021]: No items
+                  - complementary "Who to follow" [ref=e1024]:
+                    - heading "Who to follow" [level=2] [ref=e1026]:
+                      - generic [ref=e1027]: Who to follow
+                    - list [ref=e1028]:
+                      - listitem [ref=e1029] [cursor=pointer]:
+                        - generic [ref=e1030]:
+                          - link [ref=e1040]:
+                            - /url: /MLB
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - img
+                          - generic [ref=e1044]:
+                            - generic [ref=e1046]:
+                              - link "MLB Verified account" [ref=e1048]:
+                                - /url: /MLB
+                                - generic [ref=e1049]:
+                                  - generic [ref=e1051]: MLB
+                                  - img "Verified account" [ref=e1054]
+                              - link "@MLB" [ref=e1062]:
+                                - /url: /MLB
+                                - generic [ref=e1064]: "@MLB"
+                            - button "Follow @MLB" [ref=e1066]:
+                              - generic [ref=e1069]: Follow
+                      - listitem [ref=e1070] [cursor=pointer]:
+                        - generic [ref=e1071]:
+                          - link [ref=e1081]:
+                            - /url: /JeffBezos
+                          - generic [ref=e1085]:
+                            - generic [ref=e1087]:
+                              - link "Jeff Bezos Verified account" [ref=e1089]:
+                                - /url: /JeffBezos
+                                - generic [ref=e1090]:
+                                  - generic [ref=e1092]: Jeff Bezos
+                                  - generic [ref=e1094]:
+                                    - img "Verified account" [ref=e1095]
+                                    - link [ref=e1098]
+                              - link "@JeffBezos" [ref=e1107]:
+                                - /url: /JeffBezos
+                                - generic [ref=e1109]: "@JeffBezos"
+                            - button "Follow @JeffBezos" [ref=e1111]:
+                              - generic [ref=e1114]: Follow
+                      - listitem [ref=e1115] [cursor=pointer]:
+                        - generic [ref=e1116]:
+                          - link [ref=e1126]:
+                            - /url: /Cristiano
+                          - generic [ref=e1130]:
+                            - generic [ref=e1132]:
+                              - link "Cristiano Ronaldo Verified account" [ref=e1134]:
+                                - /url: /Cristiano
+                                - generic [ref=e1135]:
+                                  - generic [ref=e1137]: Cristiano Ronaldo
+                                  - img "Verified account" [ref=e1140]
+                              - link "@Cristiano" [ref=e1145]:
+                                - /url: /Cristiano
+                                - generic [ref=e1147]: "@Cristiano"
+                            - button "Follow @Cristiano" [ref=e1149]:
+                              - generic [ref=e1152]: Follow
+                    - link "Show more" [ref=e1153] [cursor=pointer]:
+                      - /url: /i/connect_people?user_id=2055148496169435136
+                      - generic [ref=e1154]: Show more
+                  - navigation "Footer" [ref=e1156]:
+                    - generic [ref=e1157]:
+                      - link "Terms of Service" [ref=e1158] [cursor=pointer]:
+                        - /url: https://x.com/tos
+                      - generic [ref=e1159]: "|"
+                    - generic [ref=e1160]:
+                      - link "Privacy Policy" [ref=e1161] [cursor=pointer]:
+                        - /url: https://x.com/privacy
+                      - generic [ref=e1162]: "|"
+                    - generic [ref=e1163]:
+                      - link "Cookie Policy" [ref=e1164] [cursor=pointer]:
+                        - /url: https://support.x.com/articles/20170514
+                      - generic [ref=e1165]: "|"
+                    - generic [ref=e1166]:
+                      - link "Accessibility" [ref=e1167] [cursor=pointer]:
+                        - /url: https://help.x.com/resources/accessibility
+                      - generic [ref=e1168]: "|"
+                    - generic [ref=e1169]:
+                      - link "Ads info" [ref=e1170] [cursor=pointer]:
+                        - /url: https://business.x.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo
+                      - generic [ref=e1171]: "|"
+                    - button "More" [ref=e1172] [cursor=pointer]:
+                      - generic [ref=e1173]:
+                        - text: More
+                        - img [ref=e1174]
+                    - generic [ref=e1177]: © 2026 X Corp.
+  - generic:
+    - img
+  - generic:
+    - img

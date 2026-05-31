@@ -1,0 +1,220 @@
+- generic [ref=e2]:
+  - generic:
+    - generic:
+      - heading "To view keyboard shortcuts, press question mark View keyboard shortcuts" [level=2] [ref=e3]:
+        - generic [ref=e4]: To view keyboard shortcuts, press question mark
+        - link "View keyboard shortcuts" [ref=e5] [cursor=pointer]:
+          - /url: /i/keyboard_shortcuts
+      - generic:
+        - generic:
+          - button "Grok" [ref=e6] [cursor=pointer]:
+            - img [ref=e7]
+          - button "Chat" [ref=e10] [cursor=pointer]:
+            - img [ref=e11]
+      - generic [ref=e14]:
+        - button "Skip to home timeline" [ref=e15] [cursor=pointer]
+        - button "Skip to trending" [ref=e17] [cursor=pointer]
+        - banner [ref=e19]:
+          - generic [ref=e21]:
+            - generic [ref=e22]:
+              - heading "X" [level=1] [ref=e24] [cursor=pointer]:
+                - link "X" [ref=e25]:
+                  - /url: /home
+                  - img [ref=e27]
+              - navigation "Primary" [ref=e31]:
+                - link "Home" [ref=e32] [cursor=pointer]:
+                  - /url: /home
+                  - generic [ref=e33]:
+                    - img [ref=e35]
+                    - generic [ref=e38]: Home
+                - link "Search and explore" [ref=e39] [cursor=pointer]:
+                  - /url: /explore
+                  - generic [ref=e40]:
+                    - img [ref=e42]
+                    - generic [ref=e45]: Explore
+                - link "Notifications" [ref=e46] [cursor=pointer]:
+                  - /url: /notifications
+                  - generic [ref=e47]:
+                    - img [ref=e49]
+                    - generic [ref=e52]: Notifications
+                - link "Follow" [ref=e53] [cursor=pointer]:
+                  - /url: /i/connect_people
+                  - generic [ref=e54]:
+                    - img [ref=e56]
+                    - generic [ref=e59]: Follow
+                - link "Direct Messages" [ref=e60] [cursor=pointer]:
+                  - /url: /i/chat
+                  - generic [ref=e61]:
+                    - img [ref=e63]
+                    - generic [ref=e66]: Chat
+                - link "Grok" [ref=e67] [cursor=pointer]:
+                  - /url: /i/grok
+                  - generic [ref=e68]:
+                    - generic [ref=e69]:
+                      - img [ref=e70]
+                      - generic "undefined unread items" [ref=e73]
+                    - generic [ref=e74]: Grok
+                - link "Bookmarks" [ref=e75] [cursor=pointer]:
+                  - /url: /i/bookmarks
+                  - generic [ref=e76]:
+                    - img [ref=e78]
+                    - generic [ref=e81]: Bookmarks
+                - link "Creator Studio" [ref=e82] [cursor=pointer]:
+                  - /url: /i/jf/creators/studio
+                  - generic [ref=e83]:
+                    - img [ref=e85]
+                    - generic [ref=e89]: Creator Studio
+                - link "Premium" [ref=e90] [cursor=pointer]:
+                  - /url: /i/premium_sign_up
+                  - generic [ref=e91]:
+                    - img [ref=e93]
+                    - generic [ref=e96]: Premium
+                - link "Profile" [ref=e97] [cursor=pointer]:
+                  - /url: /jiayu12090
+                  - generic [ref=e98]:
+                    - img [ref=e100]
+                    - generic [ref=e103]: Profile
+                - button "More menu items" [ref=e104] [cursor=pointer]:
+                  - generic [ref=e105]:
+                    - img [ref=e107]
+                    - generic [ref=e110]: More
+              - link "Post" [ref=e112] [cursor=pointer]:
+                - /url: /compose/post
+                - generic [ref=e118]: Post
+            - button "Account menu" [ref=e121] [cursor=pointer]:
+              - generic [ref=e129]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic "jiayu":
+                        - img "jiayu"
+              - generic [ref=e133]:
+                - generic [ref=e137]: jiayu
+                - generic [ref=e141]: "@jiayu12090"
+              - img [ref=e143]
+        - main [ref=e146]:
+          - generic [ref=e149]:
+            - generic "Home timeline" [ref=e151]:
+              - generic [ref=e152]:
+                - generic [ref=e158] [cursor=pointer]:
+                  - button "Back" [ref=e160]:
+                    - img [ref=e162]
+                  - generic [ref=e175]:
+                    - heading "Community post" [level=2] [ref=e176]
+                    - link "Vibe Coding" [ref=e178]:
+                      - /url: /i/communities/1898129646782497027
+                - generic:
+                  - generic:
+                    - status:
+                      - button:
+                        - generic:
+                          - img
+                          - generic: See new posts
+              - region "Conversation" [ref=e179]:
+                - heading "Conversation" [level=1] [ref=e180]
+                - 'generic "Timeline: Conversation" [ref=e181]':
+                  - generic [ref=e185]:
+                    - 'article "jiayu @jiayu12090 Built a security scanner for AI code. Scanned 50 \"made-with-cursor\" repos: • 18 had hardcoded keys • 12 had SQL injection • 15 had XSS bugs Looking for 10 beta testers. Would love r/vibecoding''s feedback 🙏" [ref=e186]':
+                      - generic [ref=e188]:
+                        - generic [ref=e192]:
+                          - link [ref=e204] [cursor=pointer]:
+                            - /url: /jiayu12090
+                          - generic [ref=e209]:
+                            - generic [ref=e212]:
+                              - link "jiayu" [ref=e215] [cursor=pointer]:
+                                - /url: /jiayu12090
+                                - generic [ref=e218]: jiayu
+                              - link "@jiayu12090" [ref=e222] [cursor=pointer]:
+                                - /url: /jiayu12090
+                                - generic [ref=e223]: "@jiayu12090"
+                            - generic [ref=e225]:
+                              - button "Grok actions" [ref=e227] [cursor=pointer]:
+                                - img [ref=e232]
+                              - button "More" [ref=e238] [cursor=pointer]:
+                                - img [ref=e242]
+                        - generic [ref=e245]:
+                          - generic [ref=e247]:
+                            - text: "Built a security scanner for AI code. Scanned 50 \"made-with-cursor\" repos: • 18 had hardcoded keys • 12 had SQL injection • 15 had XSS bugs Looking for 10 beta testers. Would love r/vibecoding's feedback"
+                            - img "🙏" [ref=e248]
+                          - generic [ref=e252]:
+                            - link "1:17 PM · May 15, 2026" [ref=e254] [cursor=pointer]:
+                              - /url: /jiayu12090/status/2055155582877966823
+                              - time [ref=e255]: 1:17 PM · May 15, 2026
+                            - generic [ref=e256]: ·
+                            - link "1 View" [ref=e257] [cursor=pointer]:
+                              - /url: /jiayu12090/status/2055155582877966823/analytics
+                              - generic [ref=e260]: "1"
+                              - generic [ref=e261]: View
+                          - group "1 view" [ref=e264]:
+                            - button "0 Replies. Reply" [ref=e266] [cursor=pointer]:
+                              - img [ref=e270]
+                            - button "0 reposts. Repost" [ref=e277] [cursor=pointer]:
+                              - img [ref=e281]
+                            - button "0 Likes. Like" [ref=e288] [cursor=pointer]:
+                              - img [ref=e292]
+                            - button "0 Bookmarks. Bookmark" [ref=e299] [cursor=pointer]:
+                              - img [ref=e303]
+                            - button "Share post" [ref=e311] [cursor=pointer]:
+                              - img [ref=e315]
+                    - generic [ref=e325]:
+                      - link "jiayu" [ref=e334] [cursor=pointer]:
+                        - /url: /jiayu12090
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic "jiayu":
+                                - img "jiayu"
+                      - generic [ref=e342]:
+                        - generic [ref=e355]:
+                          - generic [ref=e357]: Post your reply
+                          - textbox "Post text" [ref=e359]
+                        - button "Reply" [disabled] [ref=e364]:
+                          - generic [ref=e367]: Reply
+            - generic "Trending" [ref=e374]:
+              - generic [ref=e375]:
+                - search "Search" [ref=e380]:
+                  - generic [ref=e385]:
+                    - img [ref=e387]
+                    - combobox "Search query" [ref=e392]
+                - complementary "Relevant people" [ref=e395]:
+                  - heading "Relevant people" [level=2] [ref=e397]:
+                    - generic [ref=e398]: Relevant people
+                  - list [ref=e399]:
+                    - listitem [ref=e400] [cursor=pointer]:
+                      - generic [ref=e401]:
+                        - link [ref=e411]:
+                          - /url: /jiayu12090
+                        - generic [ref=e417]:
+                          - link "jiayu" [ref=e419]:
+                            - /url: /jiayu12090
+                            - generic [ref=e422]: jiayu
+                          - link "@jiayu12090" [ref=e425]:
+                            - /url: /jiayu12090
+                            - generic [ref=e427]: "@jiayu12090"
+                - generic [ref=e431]: No items
+                - navigation "Footer" [ref=e433]:
+                  - generic [ref=e434]:
+                    - link "Terms of Service" [ref=e435] [cursor=pointer]:
+                      - /url: https://x.com/tos
+                    - generic [ref=e436]: "|"
+                  - generic [ref=e437]:
+                    - link "Privacy Policy" [ref=e438] [cursor=pointer]:
+                      - /url: https://x.com/privacy
+                    - generic [ref=e439]: "|"
+                  - generic [ref=e440]:
+                    - link "Cookie Policy" [ref=e441] [cursor=pointer]:
+                      - /url: https://support.x.com/articles/20170514
+                    - generic [ref=e442]: "|"
+                  - generic [ref=e443]:
+                    - link "Accessibility" [ref=e444] [cursor=pointer]:
+                      - /url: https://help.x.com/resources/accessibility
+                    - generic [ref=e445]: "|"
+                  - generic [ref=e446]:
+                    - link "Ads info" [ref=e447] [cursor=pointer]:
+                      - /url: https://business.x.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo
+                    - generic [ref=e448]: "|"
+                  - button "More" [ref=e449] [cursor=pointer]:
+                    - generic [ref=e450]:
+                      - text: More
+                      - img [ref=e451]
+                  - generic [ref=e454]: © 2026 X Corp.

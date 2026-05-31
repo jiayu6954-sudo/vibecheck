@@ -1,0 +1,1294 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e7]:
+        - link "img" [ref=e11] [cursor=pointer]:
+          - /url: /
+          - img "img" [ref=e13]
+        - generic [ref=e14]:
+          - button "Search" [ref=e17] [cursor=pointer]
+          - img [ref=e22] [cursor=pointer]
+          - paragraph [ref=e27] [cursor=pointer]: MY LEAGUES
+          - paragraph [ref=e31] [cursor=pointer]: My coupon
+      - list [ref=e36]:
+        - listitem [ref=e37]:
+          - link "img football" [ref=e38] [cursor=pointer]:
+            - /url: /football/
+            - img "img" [ref=e40]
+            - generic [ref=e41]: football
+        - listitem [ref=e42]:
+          - link "img basketball" [ref=e43] [cursor=pointer]:
+            - /url: /basketball/
+            - img "img" [ref=e45]
+            - generic [ref=e46]: basketball
+        - listitem [ref=e47]:
+          - link "img tennis" [ref=e48] [cursor=pointer]:
+            - /url: /tennis/
+            - img "img" [ref=e50]
+            - generic [ref=e51]: tennis
+        - listitem [ref=e52]:
+          - link "img baseball" [ref=e53] [cursor=pointer]:
+            - /url: /baseball/
+            - img "img" [ref=e55]
+            - generic [ref=e56]: baseball
+        - listitem [ref=e57]:
+          - link "img hockey" [ref=e58] [cursor=pointer]:
+            - /url: /hockey/
+            - img "img" [ref=e60]
+            - generic [ref=e61]: hockey
+        - listitem [ref=e62]:
+          - link "img american football" [ref=e63] [cursor=pointer]:
+            - /url: /american-football/
+            - img "img" [ref=e65]
+            - generic [ref=e66]: american football
+        - listitem [ref=e67]:
+          - link "img aussie rules" [ref=e68] [cursor=pointer]:
+            - /url: /aussie-rules/
+            - img "img" [ref=e70]
+            - generic [ref=e71]: aussie rules
+        - listitem [ref=e72]:
+          - link "img boxing" [ref=e73] [cursor=pointer]:
+            - /url: /boxing/
+            - img "img" [ref=e75]
+            - generic [ref=e76]: boxing
+        - listitem [ref=e77]:
+          - link "img cricket" [ref=e78] [cursor=pointer]:
+            - /url: /cricket/
+            - img "img" [ref=e80]
+            - generic [ref=e81]: cricket
+        - button "More" [ref=e83] [cursor=pointer]:
+          - generic [ref=e85]: More
+    - main [ref=e88]:
+      - generic [ref=e92]:
+        - generic [ref=e93]:
+          - link "Mozzartbet 100% Welcome bonus up to €400 Claim" [ref=e94] [cursor=pointer]:
+            - /url: /bookmaker/mozzartbet/bonus-offer-banner/527/
+            - generic [ref=e95]:
+              - img "Mozzartbet" [ref=e97]
+              - generic [ref=e98]: 100% Welcome bonus up to €400
+            - button "Claim" [ref=e100]
+          - img [ref=e102]
+        - generic [ref=e104]:
+          - link "N1 Bet 50% Free Bets up to €1,000 Claim" [ref=e105] [cursor=pointer]:
+            - /url: /bookmaker/n1-bet/bonus-offer-banner/326/
+            - generic [ref=e106]:
+              - img "N1 Bet" [ref=e108]
+              - generic [ref=e109]: 50% Free Bets up to €1,000
+            - button "Claim" [ref=e111]
+          - img [ref=e113]
+        - generic [ref=e115]:
+          - link "bet365 Bet €10 and get €30 Claim" [ref=e116] [cursor=pointer]:
+            - /url: /bookmaker/bet365/bonus-offer-banner/389/
+            - generic [ref=e117]:
+              - img "bet365" [ref=e119]
+              - generic [ref=e120]: Bet €10 and get €30
+            - button "Claim" [ref=e122]
+          - img [ref=e124]
+      - generic [ref=e126]:
+        - list [ref=e129]:
+          - listitem [ref=e130]:
+            - link "home" [ref=e131] [cursor=pointer]:
+              - /url: /
+          - generic [ref=e132]: ">"
+          - listitem [ref=e133]:
+            - link "Football" [ref=e134] [cursor=pointer]:
+              - /url: /football/
+          - generic [ref=e135]: ">"
+          - listitem [ref=e136]:
+            - link "England" [ref=e137] [cursor=pointer]:
+              - /url: /football/england/
+          - generic [ref=e138]: ">"
+          - listitem [ref=e139]:
+            - link "Premier League" [ref=e140] [cursor=pointer]:
+              - /url: /football/england/premier-league/
+          - generic [ref=e141]: ">"
+          - listitem [ref=e142]:
+            - paragraph [ref=e143]: Arsenal - Fulham
+        - generic [ref=e144]:
+          - generic [ref=e147]:
+            - generic [ref=e148]:
+              - generic [ref=e150]:
+                - link "Arsenal" [ref=e151] [cursor=pointer]:
+                  - /url: /football/team/arsenal/hA1Zm19f/
+                  - paragraph [ref=e152]: Arsenal
+                - img "Arsenal" [ref=e153]
+              - generic [ref=e154]: –
+              - generic [ref=e156]:
+                - img "Fulham" [ref=e157]
+                - link "Fulham" [ref=e158] [cursor=pointer]:
+                  - /url: /football/team/fulham/69ZiU2Om/
+                  - paragraph [ref=e159]: Fulham
+            - separator [ref=e160]
+            - generic [ref=e161]:
+              - generic [ref=e162]:
+                - paragraph [ref=e163]: Sunday,
+                - paragraph [ref=e164]: 03 May 2026,
+                - paragraph [ref=e165]: 00:30
+              - generic [ref=e167] [cursor=pointer]:
+                - img "live" [ref=e168]
+                - generic [ref=e169]: Live Streaming
+          - generic [ref=e170]:
+            - generic [ref=e171]:
+              - generic [ref=e175]:
+                - button "More" [ref=e176] [cursor=pointer]:
+                  - generic [ref=e177]: More
+                - list [ref=e179]:
+                  - listitem [ref=e180] [cursor=pointer]:
+                    - generic [ref=e182]: 1X2
+                  - listitem [ref=e183] [cursor=pointer]:
+                    - generic [ref=e185]: Over/Under
+                  - listitem [ref=e186] [cursor=pointer]:
+                    - generic [ref=e188]: Asian Handicap
+                  - listitem [ref=e189] [cursor=pointer]:
+                    - generic [ref=e191]: Both Teams to Score
+                  - listitem [ref=e192] [cursor=pointer]:
+                    - generic [ref=e194]: Double Chance
+                  - listitem [ref=e195] [cursor=pointer]:
+                    - generic [ref=e197]: European Handicap
+              - generic [ref=e199]:
+                - generic [ref=e200] [cursor=pointer]: All Bookies
+                - generic [ref=e201] [cursor=pointer]: Classic Bookies
+                - generic [ref=e202] [cursor=pointer]: Crypto Bookies
+              - generic [ref=e204]:
+                - generic [ref=e205] [cursor=pointer]: Full Time
+                - generic [ref=e206] [cursor=pointer]: 1st Half
+                - generic [ref=e207] [cursor=pointer]: 2nd Half
+                - link "All Bonuses" [ref=e209] [cursor=pointer]:
+                  - /url: /bonus-offers/
+            - generic [ref=e212]:
+              - generic [ref=e213]:
+                - generic [ref=e214]:
+                  - generic [ref=e216] [cursor=pointer]:
+                    - paragraph [ref=e217]: Bookmakers
+                    - img [ref=e218]
+                  - generic [ref=e221] [cursor=pointer]:
+                    - paragraph [ref=e222]: "1"
+                    - img [ref=e223]
+                  - generic [ref=e226] [cursor=pointer]:
+                    - paragraph [ref=e227]: X
+                    - img [ref=e228]
+                  - generic [ref=e231] [cursor=pointer]:
+                    - paragraph [ref=e232]: "2"
+                    - img [ref=e233]
+                  - generic [ref=e236] [cursor=pointer]:
+                    - paragraph [ref=e237]: Payout
+                    - img [ref=e238]
+                - generic [ref=e240]:
+                  - generic [ref=e241]:
+                    - link "1xBet" [ref=e242] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/1xbet/link/
+                      - img "1xBet" [ref=e243]
+                    - link "1xBet" [ref=e244] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/1xbet/link/
+                      - paragraph [ref=e245]: 1xBet
+                    - link "1xBet" [ref=e246] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/1xbet/
+                      - generic "1xBet" [ref=e247]
+                    - link "claim bonus" [ref=e248] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/1xbet/bonus/1205/
+                      - generic [ref=e250]:
+                        - img [ref=e251]
+                        - generic [ref=e253]: claim bonus
+                  - paragraph [ref=e259]: "1.50"
+                  - paragraph [ref=e265]: "4.73"
+                  - paragraph [ref=e271]: "7.42"
+                  - generic [ref=e273]: 98.7%
+                - generic [ref=e275]:
+                  - generic [ref=e276]:
+                    - link "22Bet" [ref=e277] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/22bet/link/
+                      - img "22Bet" [ref=e278]
+                    - link "22Bet" [ref=e279] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/22bet/link/
+                      - paragraph [ref=e280]: 22Bet
+                    - link "22Bet" [ref=e281] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/22bet/
+                      - generic "22Bet" [ref=e282]
+                    - link "claim bonus" [ref=e283] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/22bet/bonus/749/
+                      - generic [ref=e285]:
+                        - img [ref=e286]
+                        - generic [ref=e288]: claim bonus
+                  - paragraph [ref=e294]: "1.44"
+                  - paragraph [ref=e300]: "4.54"
+                  - paragraph [ref=e306]: "7.10"
+                  - generic [ref=e308]: 94.7%
+                - generic [ref=e310]:
+                  - generic [ref=e311]:
+                    - link "888sport" [ref=e312] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/888sport/link/
+                      - img "888sport" [ref=e313]
+                    - link "888sport" [ref=e314] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/888sport/link/
+                      - paragraph [ref=e315]: 888sport
+                    - link "888sport" [ref=e316] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/888sport/
+                      - generic "888sport" [ref=e317]
+                    - link "claim bonus" [ref=e318] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/888sport/bonus/1067/
+                      - generic [ref=e320]:
+                        - img [ref=e321]
+                        - generic [ref=e323]: claim bonus
+                  - paragraph [ref=e329]: "1.44"
+                  - paragraph [ref=e335]: "4.33"
+                  - paragraph [ref=e341]: "7.00"
+                  - generic [ref=e343]: 93.6%
+                - generic [ref=e345]:
+                  - generic [ref=e346]:
+                    - link "bet365" [ref=e347] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/bet365/link/
+                      - img "bet365" [ref=e348]
+                    - link "bet365" [ref=e349] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/bet365/link/
+                      - paragraph [ref=e350]: bet365
+                    - link "bet365" [ref=e351] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/bet365/
+                      - generic "bet365" [ref=e352]
+                    - link "claim bonus" [ref=e353] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/bet365/bonus/389/
+                      - generic [ref=e355]:
+                        - img [ref=e356]
+                        - generic [ref=e358]: claim bonus
+                  - paragraph [ref=e364]: "1.45"
+                  - paragraph [ref=e370]: "4.50"
+                  - paragraph [ref=e376]: "7.00"
+                  - generic [ref=e378]: 94.8%
+                - generic [ref=e380]:
+                  - generic [ref=e381]:
+                    - link "Betfury" [ref=e382] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/betfury/link/
+                      - img "Betfury" [ref=e383]
+                    - link "Betfury" [ref=e384] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/betfury/link/
+                      - paragraph [ref=e385]: Betfury
+                    - link "Betfury" [ref=e386] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/betfury/
+                      - generic "Betfury" [ref=e387]
+                    - link "claim bonus" [ref=e388] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/betfury/bonus/1241/
+                      - generic [ref=e390]:
+                        - img [ref=e391]
+                        - generic [ref=e393]: claim bonus
+                    - img [ref=e395]
+                  - paragraph [ref=e402]: "1.43"
+                  - paragraph [ref=e408]: "4.40"
+                  - paragraph [ref=e414]: "7.00"
+                  - generic [ref=e416]: 93.5%
+                - generic [ref=e418]:
+                  - generic [ref=e419]:
+                    - link "BetInAsia" [ref=e420] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/betinasia/link/
+                      - img "BetInAsia" [ref=e421]
+                    - link "BetInAsia" [ref=e422] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/betinasia/link/
+                      - paragraph [ref=e423]: BetInAsia
+                    - link "BetInAsia" [ref=e424] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/betinasia/
+                      - generic "BetInAsia" [ref=e425]
+                    - link "claim bonus" [ref=e426] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/betinasia/bonus/747/
+                      - generic [ref=e428]:
+                        - img [ref=e429]
+                        - generic [ref=e431]: claim bonus
+                  - paragraph [ref=e437]: "1.46"
+                  - paragraph [ref=e443]: "4.70"
+                  - paragraph [ref=e449]: "7.83"
+                  - generic [ref=e451]: 97.5%
+                - generic [ref=e453]:
+                  - generic [ref=e454]:
+                    - link "Bets.io" [ref=e455] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/bets-io/link/
+                      - img "Bets.io" [ref=e456]
+                    - link "Bets.io" [ref=e457] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/bets-io/link/
+                      - paragraph [ref=e458]: Bets.io
+                    - link "Bets.io" [ref=e459] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/bets-io/
+                      - generic "Bets.io" [ref=e460]
+                    - link "claim bonus" [ref=e461] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/bets-io/bonus/1239/
+                      - generic [ref=e463]:
+                        - img [ref=e464]
+                        - generic [ref=e466]: claim bonus
+                    - img [ref=e468]
+                  - paragraph [ref=e475]: "1.40"
+                  - paragraph [ref=e481]: "4.33"
+                  - paragraph [ref=e487]: "7.40"
+                  - generic [ref=e489]: 92.6%
+                - generic [ref=e491]:
+                  - generic [ref=e492]:
+                    - link "Betsson" [ref=e493] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/betsson/link/
+                      - img "Betsson" [ref=e494]
+                    - link "Betsson" [ref=e495] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/betsson/link/
+                      - paragraph [ref=e496]: Betsson
+                    - link "Betsson" [ref=e497] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/betsson/
+                      - generic "Betsson" [ref=e498]
+                    - link "Betsson":
+                      - /url: https://www.oddsportal.com/bookmaker/betsson/bonus/
+                  - paragraph [ref=e504]: "1.46"
+                  - paragraph [ref=e510]: "4.55"
+                  - paragraph [ref=e516]: "7.40"
+                  - generic [ref=e518]: 96.2%
+                - generic [ref=e520]:
+                  - generic [ref=e521]:
+                    - link "Cloudbet" [ref=e522] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/cloudbet/link/
+                      - img "Cloudbet" [ref=e523]
+                    - link "Cloudbet" [ref=e524] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/cloudbet/link/
+                      - paragraph [ref=e525]: Cloudbet
+                    - link "Cloudbet" [ref=e526] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/cloudbet/
+                      - generic "Cloudbet" [ref=e527]
+                    - link "claim bonus" [ref=e528] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/cloudbet/bonus/1263/
+                      - generic [ref=e530]:
+                        - img [ref=e531]
+                        - generic [ref=e533]: claim bonus
+                    - img [ref=e535]
+                  - paragraph [ref=e541]: "1.43"
+                  - paragraph [ref=e546]: "4.59"
+                  - paragraph [ref=e551]: "7.75"
+                  - generic [ref=e553]: "-"
+                - generic [ref=e555]:
+                  - generic [ref=e556]:
+                    - link "GGBET" [ref=e557] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/ggbet/link/
+                      - img "GGBET" [ref=e558]
+                    - link "GGBET" [ref=e559] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/ggbet/link/
+                      - paragraph [ref=e560]: GGBET
+                    - link "GGBET" [ref=e561] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/ggbet/
+                      - generic "GGBET" [ref=e562]
+                    - link "claim bonus" [ref=e563] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/ggbet/bonus/313/
+                      - generic [ref=e565]:
+                        - img [ref=e566]
+                        - generic [ref=e568]: claim bonus
+                  - paragraph [ref=e574]: "1.47"
+                  - paragraph [ref=e580]: "4.55"
+                  - paragraph [ref=e586]: "7.13"
+                  - generic [ref=e588]: 96.1%
+                - generic [ref=e590]:
+                  - generic [ref=e591]:
+                    - link "Megapari" [ref=e592] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/megapari/link/
+                      - img "Megapari" [ref=e593]
+                    - link "Megapari" [ref=e594] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/megapari/link/
+                      - paragraph [ref=e595]: Megapari
+                    - link "Megapari" [ref=e596] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/megapari/
+                      - generic "Megapari" [ref=e597]
+                    - link "claim bonus" [ref=e598] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/megapari/bonus/569/
+                      - generic [ref=e600]:
+                        - img [ref=e601]
+                        - generic [ref=e603]: claim bonus
+                  - paragraph [ref=e609]: "1.50"
+                  - paragraph [ref=e615]: "4.73"
+                  - paragraph [ref=e621]: "7.42"
+                  - generic [ref=e623]: 98.7%
+                - generic [ref=e625]:
+                  - generic [ref=e626]:
+                    - link "Melbet" [ref=e627] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/melbet/link/
+                      - img "Melbet" [ref=e628]
+                    - link "Melbet" [ref=e629] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/melbet/link/
+                      - paragraph [ref=e630]: Melbet
+                    - link "Melbet" [ref=e631] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/melbet/
+                      - generic "Melbet" [ref=e632]
+                    - link "claim bonus" [ref=e633] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/melbet/bonus/315/
+                      - generic [ref=e635]:
+                        - img [ref=e636]
+                        - generic [ref=e638]: claim bonus
+                  - paragraph [ref=e644]: "1.44"
+                  - paragraph [ref=e650]: "4.54"
+                  - paragraph [ref=e656]: "7.10"
+                  - generic [ref=e658]: 94.7%
+                - generic [ref=e660]:
+                  - generic [ref=e661]:
+                    - link "Mozzartbet" [ref=e662] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/mozzartbet/link/
+                      - img "Mozzartbet" [ref=e663]
+                    - link "Mozzartbet" [ref=e664] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/mozzartbet/link/
+                      - paragraph [ref=e665]: Mozzartbet
+                    - link "Mozzartbet" [ref=e666] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/mozzartbet/
+                      - generic "Mozzartbet" [ref=e667]
+                    - link "claim bonus" [ref=e668] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/mozzartbet/bonus/527/
+                      - generic [ref=e670]:
+                        - img [ref=e671]
+                        - generic [ref=e673]: claim bonus
+                  - paragraph [ref=e679]: "1.48"
+                  - paragraph [ref=e685]: "4.50"
+                  - paragraph [ref=e691]: "6.75"
+                  - generic [ref=e693]: 95.6%
+                - generic [ref=e695]:
+                  - generic [ref=e696]:
+                    - link "N1 Bet" [ref=e697] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/n1-bet/link/
+                      - img "N1 Bet" [ref=e698]
+                    - link "N1 Bet" [ref=e699] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/n1-bet/link/
+                      - paragraph [ref=e700]: N1 Bet
+                    - link "N1 Bet" [ref=e701] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/n1-bet/
+                      - generic "N1 Bet" [ref=e702]
+                    - link "claim bonus" [ref=e703] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/n1-bet/bonus/326/
+                      - generic [ref=e705]:
+                        - img [ref=e706]
+                        - generic [ref=e708]: claim bonus
+                  - paragraph [ref=e714]: "1.40"
+                  - paragraph [ref=e720]: "4.33"
+                  - paragraph [ref=e726]: "7.40"
+                  - generic [ref=e728]: 92.6%
+                - generic [ref=e730]:
+                  - generic [ref=e731]:
+                    - link "Roobet" [ref=e732] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/roobet/link/
+                      - img "Roobet" [ref=e733]
+                    - link "Roobet" [ref=e734] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/roobet/link/
+                      - paragraph [ref=e735]: Roobet
+                    - link "Roobet" [ref=e736] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/roobet/
+                      - generic "Roobet" [ref=e737]
+                    - link "claim bonus" [ref=e738] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/roobet/bonus/1243/
+                      - generic [ref=e740]:
+                        - img [ref=e741]
+                        - generic [ref=e743]: claim bonus
+                    - img [ref=e745]
+                  - paragraph [ref=e752]: "1.43"
+                  - paragraph [ref=e758]: "4.40"
+                  - paragraph [ref=e764]: "7.00"
+                  - generic [ref=e766]: 93.5%
+                - generic [ref=e768]:
+                  - generic [ref=e769]:
+                    - link "Shuffle" [ref=e770] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/shuffle/link/
+                      - img "Shuffle" [ref=e771]
+                    - link "Shuffle" [ref=e772] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/shuffle/link/
+                      - paragraph [ref=e773]: Shuffle
+                    - link "Shuffle" [ref=e774] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/shuffle/
+                      - generic "Shuffle" [ref=e775]
+                    - link "claim bonus" [ref=e776] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/shuffle/bonus/979/
+                      - generic [ref=e778]:
+                        - img [ref=e779]
+                        - generic [ref=e781]: claim bonus
+                    - img [ref=e783]
+                  - paragraph [ref=e790]: "1.40"
+                  - paragraph [ref=e796]: "4.36"
+                  - paragraph [ref=e802]: "7.05"
+                  - generic [ref=e804]: 92.1%
+                - generic [ref=e806]:
+                  - generic [ref=e807]:
+                    - link "Stake.com" [ref=e808] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/stake-com/link/
+                      - img "Stake.com" [ref=e809]
+                    - link "Stake.com" [ref=e810] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/stake-com/link/
+                      - paragraph [ref=e811]: Stake.com
+                    - link "Stake.com" [ref=e812] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/stake-com/
+                      - generic "Stake.com" [ref=e813]
+                    - link "claim bonus" [ref=e814] [cursor=pointer]:
+                      - /url: https://www.oddsportal.com/bookmaker/stake-com/bonus/559/
+                      - generic [ref=e816]:
+                        - img [ref=e817]
+                        - generic [ref=e819]: claim bonus
+                    - img [ref=e821]
+                  - paragraph [ref=e828]: "1.46"
+                  - paragraph [ref=e834]: "4.60"
+                  - paragraph [ref=e840]: "7.40"
+                  - generic [ref=e842]: 96.4%
+              - paragraph [ref=e846]: My coupon
+              - generic [ref=e863]:
+                - paragraph [ref=e865]: User Predictions
+                - generic [ref=e869] [cursor=pointer]: 0%
+                - generic [ref=e872] [cursor=pointer]: 0%
+                - generic [ref=e875] [cursor=pointer]: 0%
+              - generic [ref=e879]:
+                - paragraph [ref=e882]:
+                  - checkbox [disabled] [ref=e885]
+                - paragraph [ref=e888]:
+                  - generic [ref=e889]: OddsAlert
+                  - generic [ref=e890]:
+                    - paragraph [ref=e891]: Notify me when odds reach or exceed certain value
+                    - generic [ref=e892]: (you must be logged-in)
+              - generic [ref=e893] [cursor=pointer]:
+                - generic [ref=e894]:
+                  - img [ref=e895]
+                  - generic [ref=e897]:
+                    - paragraph [ref=e899]: Looking for the best value?
+                    - paragraph [ref=e903]:
+                      - strong [ref=e904]: Megapari
+                      - text: is offering the highest payout at
+                      - strong [ref=e905]: 98.7%
+                      - text: for this match - lock it in before it changes!
+                - generic [ref=e906]:
+                  - img "Megapari" [ref=e908]
+                  - button "Claim Now" [ref=e910]
+            - generic [ref=e912]:
+              - paragraph [ref=e913]: Match Facts
+              - paragraph [ref=e914]:
+                - paragraph [ref=e915]: Check out the current top trends for each team heading in this fixture, including any winning or losing runs for the teams involved, and whether you should expect goals or not from the encounter based on recent form.
+              - generic [ref=e916]:
+                - generic [ref=e917]:
+                  - generic [ref=e918]: Arsenal To win
+                  - generic [ref=e919]:
+                    - generic [ref=e920]:
+                      - generic [ref=e921]:
+                        - img "Arsenal" [ref=e923]
+                        - paragraph [ref=e924]: Arsenal won - 3/5 Last Matches
+                      - generic [ref=e925]:
+                        - img "Fulham" [ref=e927]
+                        - paragraph [ref=e928]: Fulham won - 2/5 Last Matches
+                    - generic [ref=e931] [cursor=pointer]:
+                      - link "1xBet" [ref=e933]:
+                        - /url: https://www.oddsportal.com/bookmaker/1xbet/link/
+                        - img "1xBet" [ref=e934]
+                      - generic [ref=e935]:
+                        - generic [ref=e936]: 1X2 - 1
+                        - generic [ref=e937]: Highest Odds
+                      - generic [ref=e938]:
+                        - generic [ref=e939]: "1.50"
+                        - button [ref=e941]:
+                          - img [ref=e943]
+                  - separator [ref=e945]
+                - generic [ref=e946]:
+                  - generic [ref=e947]: Under 2.5 Goals
+                  - generic [ref=e948]:
+                    - generic [ref=e949]:
+                      - generic [ref=e950]:
+                        - img "Arsenal" [ref=e952]
+                        - paragraph [ref=e953]: "Arsenal: Over 2.5 Goals - 2/5 Last Matches"
+                      - generic [ref=e954]:
+                        - img "Fulham" [ref=e956]
+                        - paragraph [ref=e957]: "Fulham: Over 2.5 Goals - 1/5 Last Matches"
+                    - generic [ref=e960] [cursor=pointer]:
+                      - link "BetInAsia" [ref=e962]:
+                        - /url: https://www.oddsportal.com/bookmaker/betinasia/link/
+                        - img "BetInAsia" [ref=e963]
+                      - generic [ref=e964]:
+                        - generic [ref=e965]: Under 2.5
+                        - generic [ref=e966]: Highest Odds
+                      - generic [ref=e967]:
+                        - generic [ref=e968]: "2.09"
+                        - button [ref=e970]:
+                          - img [ref=e972]
+                  - separator [ref=e974]
+                - generic [ref=e975]:
+                  - generic [ref=e976]: Both Teams To Score - No
+                  - generic [ref=e977]:
+                    - generic [ref=e978]:
+                      - generic [ref=e979]:
+                        - img "Arsenal" [ref=e981]
+                        - paragraph [ref=e982]: "Arsenal: Both teams scored - 2/5 Last Matches"
+                      - generic [ref=e983]:
+                        - img "Fulham" [ref=e985]
+                        - paragraph [ref=e986]: "Fulham: Both teams scored - 1/5 Last Matches"
+                    - generic [ref=e989] [cursor=pointer]:
+                      - link "888sport" [ref=e991]:
+                        - /url: https://www.oddsportal.com/bookmaker/888sport/link/
+                        - img "888sport" [ref=e992]
+                      - generic [ref=e993]:
+                        - generic [ref=e994]: BTTS - No
+                        - generic [ref=e995]: Highest Odds
+                      - generic [ref=e996]:
+                        - generic [ref=e997]: "1.85"
+                        - button [ref=e999]:
+                          - img [ref=e1001]
+            - generic [ref=e1003]:
+              - generic [ref=e1005]:
+                - generic [ref=e1006]:
+                  - paragraph [ref=e1007]: "Previous Matches: Arsenal"
+                  - generic [ref=e1008]:
+                    - generic [ref=e1009]:
+                      - link "198 England" [ref=e1010] [cursor=pointer]:
+                        - /url: /football/england/
+                        - img "198" [ref=e1011]
+                        - paragraph [ref=e1012]: England
+                      - generic [ref=e1013]: /
+                      - link "Premier League" [ref=e1014] [cursor=pointer]:
+                        - /url: /football/england/premier-league/
+                    - generic [ref=e1017]:
+                      - generic [ref=e1018]: "1"
+                      - generic [ref=e1019]: X
+                      - generic [ref=e1020]: "2"
+                    - generic [ref=e1022]:
+                      - link "26/Apr Arsenal Arsenal 1 – 0 Newcastle Newcastle" [ref=e1023] [cursor=pointer]:
+                        - /url: /football/h2h/arsenal-hA1Zm19f/newcastle-utd-p6ahwuwJ/#OQsq6PYa
+                        - generic [ref=e1024]:
+                          - paragraph [ref=e1028]: 26/Apr
+                          - generic [ref=e1031]:
+                            - generic "Arsenal" [ref=e1032]:
+                              - img "Arsenal" [ref=e1033]
+                              - paragraph [ref=e1035]: Arsenal
+                            - generic [ref=e1037]:
+                              - generic [ref=e1038]: "1"
+                              - generic [ref=e1039]: –
+                              - generic [ref=e1040]: "0"
+                            - generic "Newcastle" [ref=e1041]:
+                              - img "Newcastle" [ref=e1042]
+                              - paragraph [ref=e1044]: Newcastle
+                      - paragraph [ref=e1049] [cursor=pointer]: "1.44"
+                      - paragraph [ref=e1053] [cursor=pointer]: "5.25"
+                      - paragraph [ref=e1057] [cursor=pointer]: "8.25"
+                  - generic [ref=e1060]:
+                    - link "19/Apr Manchester City Manchester City 2 – 1 Arsenal Arsenal" [ref=e1061] [cursor=pointer]:
+                      - /url: /football/h2h/arsenal-hA1Zm19f/manchester-city-Wtn9Stg0/#U3M9iQJ6
+                      - generic [ref=e1062]:
+                        - paragraph [ref=e1066]: 19/Apr
+                        - generic [ref=e1069]:
+                          - generic "Manchester City" [ref=e1070]:
+                            - img "Manchester City" [ref=e1071]
+                            - paragraph [ref=e1073]: Manchester City
+                          - generic [ref=e1075]:
+                            - generic [ref=e1076]: "2"
+                            - generic [ref=e1077]: –
+                            - generic [ref=e1078]: "1"
+                          - generic "Arsenal" [ref=e1079]:
+                            - img "Arsenal" [ref=e1080]
+                            - paragraph [ref=e1082]: Arsenal
+                    - paragraph [ref=e1087] [cursor=pointer]: "1.90"
+                    - paragraph [ref=e1091] [cursor=pointer]: "3.78"
+                    - paragraph [ref=e1095] [cursor=pointer]: "4.60"
+                  - generic [ref=e1096]:
+                    - generic [ref=e1097]:
+                      - link "6 Europe" [ref=e1098] [cursor=pointer]:
+                        - /url: /football/europe/
+                        - img "6" [ref=e1099]
+                        - paragraph [ref=e1100]: Europe
+                      - generic [ref=e1101]: /
+                      - link "Champions League" [ref=e1102] [cursor=pointer]:
+                        - /url: /football/europe/champions-league/
+                    - generic [ref=e1105]:
+                      - generic [ref=e1106]: "1"
+                      - generic [ref=e1107]: X
+                      - generic [ref=e1108]: "2"
+                    - generic [ref=e1110]:
+                      - link "16/Apr Arsenal Arsenal 0 – 0 Sporting CP Sporting CP" [ref=e1111] [cursor=pointer]:
+                        - /url: /football/h2h/arsenal-hA1Zm19f/sporting-cp-tljXuHBC/#nJz1sa9F
+                        - generic [ref=e1112]:
+                          - paragraph [ref=e1116]: 16/Apr
+                          - generic [ref=e1119]:
+                            - generic "Arsenal" [ref=e1120]:
+                              - img "Arsenal" [ref=e1121]
+                              - paragraph [ref=e1123]: Arsenal
+                            - generic [ref=e1125]:
+                              - generic [ref=e1126]: "0"
+                              - generic [ref=e1127]: –
+                              - generic [ref=e1128]: "0"
+                            - generic "Sporting CP" [ref=e1129]:
+                              - img "Sporting CP" [ref=e1130]
+                              - paragraph [ref=e1132]: Sporting CP
+                      - paragraph [ref=e1137] [cursor=pointer]: "1.58"
+                      - paragraph [ref=e1141] [cursor=pointer]: "4.50"
+                      - paragraph [ref=e1145] [cursor=pointer]: "6.43"
+                  - generic [ref=e1146]:
+                    - generic [ref=e1147]:
+                      - link "198 England" [ref=e1148] [cursor=pointer]:
+                        - /url: /football/england/
+                        - img "198" [ref=e1149]
+                        - paragraph [ref=e1150]: England
+                      - generic [ref=e1151]: /
+                      - link "Premier League" [ref=e1152] [cursor=pointer]:
+                        - /url: /football/england/premier-league/
+                    - generic [ref=e1155]:
+                      - generic [ref=e1156]: "1"
+                      - generic [ref=e1157]: X
+                      - generic [ref=e1158]: "2"
+                    - generic [ref=e1160]:
+                      - link "11/Apr Arsenal Arsenal 1 – 2 Bournemouth Bournemouth" [ref=e1161] [cursor=pointer]:
+                        - /url: /football/h2h/arsenal-hA1Zm19f/bournemouth-OtpNdwrc/#jcHwYvNG
+                        - generic [ref=e1162]:
+                          - paragraph [ref=e1166]: 11/Apr
+                          - generic [ref=e1169]:
+                            - generic "Arsenal" [ref=e1170]:
+                              - img "Arsenal" [ref=e1171]
+                              - paragraph [ref=e1173]: Arsenal
+                            - generic [ref=e1175]:
+                              - generic [ref=e1176]: "1"
+                              - generic [ref=e1177]: –
+                              - generic [ref=e1178]: "2"
+                            - generic "Bournemouth" [ref=e1179]:
+                              - img "Bournemouth" [ref=e1180]
+                              - paragraph [ref=e1182]: Bournemouth
+                      - paragraph [ref=e1187] [cursor=pointer]: "1.53"
+                      - paragraph [ref=e1191] [cursor=pointer]: "4.80"
+                      - paragraph [ref=e1195] [cursor=pointer]: "7.62"
+                  - generic [ref=e1196]:
+                    - generic [ref=e1197]:
+                      - link "6 Europe" [ref=e1198] [cursor=pointer]:
+                        - /url: /football/europe/
+                        - img "6" [ref=e1199]
+                        - paragraph [ref=e1200]: Europe
+                      - generic [ref=e1201]: /
+                      - link "Champions League" [ref=e1202] [cursor=pointer]:
+                        - /url: /football/europe/champions-league/
+                    - generic [ref=e1205]:
+                      - generic [ref=e1206]: "1"
+                      - generic [ref=e1207]: X
+                      - generic [ref=e1208]: "2"
+                    - generic [ref=e1210]:
+                      - link "08/Apr Sporting CP Sporting CP 0 – 1 Arsenal Arsenal" [ref=e1211] [cursor=pointer]:
+                        - /url: /football/h2h/arsenal-hA1Zm19f/sporting-cp-tljXuHBC/#E5xgqLv3
+                        - generic [ref=e1212]:
+                          - paragraph [ref=e1216]: 08/Apr
+                          - generic [ref=e1219]:
+                            - generic "Sporting CP" [ref=e1220]:
+                              - img "Sporting CP" [ref=e1221]
+                              - paragraph [ref=e1223]: Sporting CP
+                            - generic [ref=e1225]:
+                              - generic [ref=e1226]: "0"
+                              - generic [ref=e1227]: –
+                              - generic [ref=e1228]: "1"
+                            - generic "Arsenal" [ref=e1229]:
+                              - img "Arsenal" [ref=e1230]
+                              - paragraph [ref=e1232]: Arsenal
+                      - paragraph [ref=e1237] [cursor=pointer]: "4.50"
+                      - paragraph [ref=e1241] [cursor=pointer]: "3.79"
+                      - paragraph [ref=e1245] [cursor=pointer]: "1.95"
+                - generic [ref=e1246] [cursor=pointer]:
+                  - text: Show more
+                  - img [ref=e1247]
+              - generic [ref=e1250]:
+                - generic [ref=e1251]:
+                  - paragraph [ref=e1252]: "Previous Matches: Fulham"
+                  - generic [ref=e1253]:
+                    - generic [ref=e1254]:
+                      - link "198 England" [ref=e1255] [cursor=pointer]:
+                        - /url: /football/england/
+                        - img "198" [ref=e1256]
+                        - paragraph [ref=e1257]: England
+                      - generic [ref=e1258]: /
+                      - link "Premier League" [ref=e1259] [cursor=pointer]:
+                        - /url: /football/england/premier-league/
+                    - generic [ref=e1262]:
+                      - generic [ref=e1263]: "1"
+                      - generic [ref=e1264]: X
+                      - generic [ref=e1265]: "2"
+                    - generic [ref=e1267]:
+                      - link "25/Apr Fulham Fulham 1 – 0 Aston Villa Aston Villa" [ref=e1268] [cursor=pointer]:
+                        - /url: /football/h2h/aston-villa-W00wmLO0/fulham-69ZiU2Om/#CpqK7xA4
+                        - generic [ref=e1269]:
+                          - paragraph [ref=e1273]: 25/Apr
+                          - generic [ref=e1276]:
+                            - generic "Fulham" [ref=e1277]:
+                              - img "Fulham" [ref=e1278]
+                              - paragraph [ref=e1280]: Fulham
+                            - generic [ref=e1282]:
+                              - generic [ref=e1283]: "1"
+                              - generic [ref=e1284]: –
+                              - generic [ref=e1285]: "0"
+                            - generic "Aston Villa" [ref=e1286]:
+                              - img "Aston Villa" [ref=e1287]
+                              - paragraph [ref=e1289]: Aston Villa
+                      - paragraph [ref=e1294] [cursor=pointer]: "2.70"
+                      - paragraph [ref=e1298] [cursor=pointer]: "3.81"
+                      - paragraph [ref=e1302] [cursor=pointer]: "2.95"
+                  - generic [ref=e1305]:
+                    - link "18/Apr Brentford Brentford 0 – 0 Fulham Fulham" [ref=e1306] [cursor=pointer]:
+                      - /url: /football/h2h/brentford-xYe7DwID/fulham-69ZiU2Om/#dxqTvmz1
+                      - generic [ref=e1307]:
+                        - paragraph [ref=e1311]: 18/Apr
+                        - generic [ref=e1314]:
+                          - generic "Brentford" [ref=e1315]:
+                            - img "Brentford" [ref=e1316]
+                            - paragraph [ref=e1318]: Brentford
+                          - generic [ref=e1320]:
+                            - generic [ref=e1321]: "0"
+                            - generic [ref=e1322]: –
+                            - generic [ref=e1323]: "0"
+                          - generic "Fulham" [ref=e1324]:
+                            - img "Fulham" [ref=e1325]
+                            - paragraph [ref=e1327]: Fulham
+                    - paragraph [ref=e1332] [cursor=pointer]: "2.03"
+                    - paragraph [ref=e1336] [cursor=pointer]: "3.93"
+                    - paragraph [ref=e1340] [cursor=pointer]: "3.80"
+                  - generic [ref=e1343]:
+                    - link "12/Apr Liverpool Liverpool 2 – 0 Fulham Fulham" [ref=e1344] [cursor=pointer]:
+                      - /url: /football/h2h/fulham-69ZiU2Om/liverpool-lId4TMwf/#jJ4pUVLr
+                      - generic [ref=e1345]:
+                        - paragraph [ref=e1349]: 12/Apr
+                        - generic [ref=e1352]:
+                          - generic "Liverpool" [ref=e1353]:
+                            - img "Liverpool" [ref=e1354]
+                            - paragraph [ref=e1356]: Liverpool
+                          - generic [ref=e1358]:
+                            - generic [ref=e1359]: "2"
+                            - generic [ref=e1360]: –
+                            - generic [ref=e1361]: "0"
+                          - generic "Fulham" [ref=e1362]:
+                            - img "Fulham" [ref=e1363]
+                            - paragraph [ref=e1365]: Fulham
+                    - paragraph [ref=e1370] [cursor=pointer]: "1.78"
+                    - paragraph [ref=e1374] [cursor=pointer]: "4.30"
+                    - paragraph [ref=e1378] [cursor=pointer]: "5.00"
+                  - generic [ref=e1380]:
+                    - link "21/Mar Fulham Fulham 3 – 1 Burnley Burnley" [ref=e1381] [cursor=pointer]:
+                      - /url: /football/h2h/burnley-0j2eUlMC/fulham-EXCPojim/#Aonqhgqt
+                      - generic [ref=e1382]:
+                        - paragraph [ref=e1386]: 21/Mar
+                        - generic [ref=e1389]:
+                          - generic "Fulham" [ref=e1390]:
+                            - img "Fulham" [ref=e1391]
+                            - paragraph [ref=e1393]: Fulham
+                          - generic [ref=e1395]:
+                            - generic [ref=e1396]: "3"
+                            - generic [ref=e1397]: –
+                            - generic [ref=e1398]: "1"
+                          - generic "Burnley" [ref=e1399]:
+                            - img "Burnley" [ref=e1400]
+                            - paragraph [ref=e1402]: Burnley
+                    - paragraph [ref=e1407] [cursor=pointer]: "1.60"
+                    - paragraph [ref=e1411] [cursor=pointer]: "4.60"
+                    - paragraph [ref=e1415] [cursor=pointer]: "6.41"
+                  - generic [ref=e1418]:
+                    - link "21/Mar Fulham Fulham 3 – 1 Burnley Burnley" [ref=e1419] [cursor=pointer]:
+                      - /url: /football/h2h/burnley-z3dmTMMO/fulham-69ZiU2Om/#8EamNN8b
+                      - generic [ref=e1420]:
+                        - paragraph [ref=e1424]: 21/Mar
+                        - generic [ref=e1427]:
+                          - generic "Fulham" [ref=e1428]:
+                            - img "Fulham" [ref=e1429]
+                            - paragraph [ref=e1431]: Fulham
+                          - generic [ref=e1433]:
+                            - generic [ref=e1434]: "3"
+                            - generic [ref=e1435]: –
+                            - generic [ref=e1436]: "1"
+                          - generic "Burnley" [ref=e1437]:
+                            - img "Burnley" [ref=e1438]
+                            - paragraph [ref=e1440]: Burnley
+                    - paragraph [ref=e1445] [cursor=pointer]: "1.60"
+                    - paragraph [ref=e1449] [cursor=pointer]: "4.60"
+                    - paragraph [ref=e1453] [cursor=pointer]: "6.41"
+                  - generic [ref=e1456]:
+                    - link "15/Mar Nottingham Nottingham 0 – 0 Fulham Fulham" [ref=e1457] [cursor=pointer]:
+                      - /url: /football/h2h/fulham-69ZiU2Om/nottingham-UsushcZr/#QLQeh39O
+                      - generic [ref=e1458]:
+                        - paragraph [ref=e1462]: 15/Mar
+                        - generic [ref=e1465]:
+                          - generic "Nottingham" [ref=e1466]:
+                            - img "Nottingham" [ref=e1467]
+                            - paragraph [ref=e1469]: Nottingham
+                          - generic [ref=e1471]:
+                            - generic [ref=e1472]: "0"
+                            - generic [ref=e1473]: –
+                            - generic [ref=e1474]: "0"
+                          - generic "Fulham" [ref=e1475]:
+                            - img "Fulham" [ref=e1476]
+                            - paragraph [ref=e1478]: Fulham
+                    - paragraph [ref=e1483] [cursor=pointer]: "2.40"
+                    - paragraph [ref=e1487] [cursor=pointer]: "3.40"
+                    - paragraph [ref=e1491] [cursor=pointer]: "3.27"
+                - generic [ref=e1492] [cursor=pointer]:
+                  - text: Show more
+                  - img [ref=e1493]
+              - generic [ref=e1496]:
+                - generic [ref=e1497]:
+                  - paragraph [ref=e1498]: H2H Results
+                  - generic [ref=e1499]:
+                    - generic [ref=e1500]:
+                      - link "198 England" [ref=e1501] [cursor=pointer]:
+                        - /url: /football/england/
+                        - img "198" [ref=e1502]
+                        - paragraph [ref=e1503]: England
+                      - generic [ref=e1504]: /
+                      - link "Premier League" [ref=e1505] [cursor=pointer]:
+                        - /url: /football/england/premier-league/
+                    - generic [ref=e1508]:
+                      - generic [ref=e1509]: "1"
+                      - generic [ref=e1510]: X
+                      - generic [ref=e1511]: "2"
+                    - generic [ref=e1513]:
+                      - link "19/Oct Fulham Fulham 0 – 1 Arsenal Arsenal" [ref=e1514] [cursor=pointer]:
+                        - /url: /football/h2h/arsenal-hA1Zm19f/fulham-69ZiU2Om/#6kwlldp2
+                        - generic [ref=e1515]:
+                          - paragraph [ref=e1519]: 19/Oct
+                          - generic [ref=e1522]:
+                            - generic "Fulham" [ref=e1523]:
+                              - img "Fulham" [ref=e1524]
+                              - paragraph [ref=e1526]: Fulham
+                            - generic [ref=e1528]:
+                              - generic [ref=e1529]: "0"
+                              - generic [ref=e1530]: –
+                              - generic [ref=e1531]: "1"
+                            - generic "Arsenal" [ref=e1532]:
+                              - img "Arsenal" [ref=e1533]
+                              - paragraph [ref=e1535]: Arsenal
+                      - paragraph [ref=e1540] [cursor=pointer]: "7.35"
+                      - paragraph [ref=e1544] [cursor=pointer]: "4.40"
+                      - paragraph [ref=e1548] [cursor=pointer]: "1.55"
+                  - generic [ref=e1549]:
+                    - generic [ref=e1550]:
+                      - link "198 England" [ref=e1551] [cursor=pointer]:
+                        - /url: /football/england/
+                        - img "198" [ref=e1552]
+                        - paragraph [ref=e1553]: England
+                      - generic [ref=e1554]: /
+                      - link "Premier League 2024/2025" [ref=e1555] [cursor=pointer]:
+                        - /url: /football/england/premier-league-2024-2025/
+                    - generic [ref=e1558]:
+                      - generic [ref=e1559]: "1"
+                      - generic [ref=e1560]: X
+                      - generic [ref=e1561]: "2"
+                    - generic [ref=e1563]:
+                      - link "02/Apr Arsenal Arsenal 2 – 1 Fulham Fulham" [ref=e1564] [cursor=pointer]:
+                        - /url: /football/h2h/arsenal-hA1Zm19f/fulham-69ZiU2Om/#vRiDNL8C
+                        - generic [ref=e1565]:
+                          - paragraph [ref=e1569]: 02/Apr
+                          - generic [ref=e1572]:
+                            - generic "Arsenal" [ref=e1573]:
+                              - img "Arsenal" [ref=e1574]
+                              - paragraph [ref=e1576]: Arsenal
+                            - generic [ref=e1578]:
+                              - generic [ref=e1579]: "2"
+                              - generic [ref=e1580]: –
+                              - generic [ref=e1581]: "1"
+                            - generic "Fulham" [ref=e1582]:
+                              - img "Fulham" [ref=e1583]
+                              - paragraph [ref=e1585]: Fulham
+                      - paragraph [ref=e1590] [cursor=pointer]: "1.53"
+                      - paragraph [ref=e1594] [cursor=pointer]: "4.55"
+                      - paragraph [ref=e1598] [cursor=pointer]: "8.19"
+                  - generic [ref=e1601]:
+                    - link "08/Dec Fulham Fulham 1 – 1 Arsenal Arsenal" [ref=e1602] [cursor=pointer]:
+                      - /url: /football/h2h/arsenal-hA1Zm19f/fulham-69ZiU2Om/#0StR463n
+                      - generic [ref=e1603]:
+                        - paragraph [ref=e1607]: 08/Dec
+                        - generic [ref=e1610]:
+                          - generic "Fulham" [ref=e1611]:
+                            - img "Fulham" [ref=e1612]
+                            - paragraph [ref=e1614]: Fulham
+                          - generic [ref=e1616]:
+                            - generic [ref=e1617]: "1"
+                            - generic [ref=e1618]: –
+                            - generic [ref=e1619]: "1"
+                          - generic "Arsenal" [ref=e1620]:
+                            - img "Arsenal" [ref=e1621]
+                            - paragraph [ref=e1623]: Arsenal
+                    - paragraph [ref=e1628] [cursor=pointer]: "5.52"
+                    - paragraph [ref=e1632] [cursor=pointer]: "4.41"
+                    - paragraph [ref=e1636] [cursor=pointer]: "1.65"
+                  - generic [ref=e1637]:
+                    - generic [ref=e1638]:
+                      - link "198 England" [ref=e1639] [cursor=pointer]:
+                        - /url: /football/england/
+                        - img "198" [ref=e1640]
+                        - paragraph [ref=e1641]: England
+                      - generic [ref=e1642]: /
+                      - link "Premier League 2023/2024" [ref=e1643] [cursor=pointer]:
+                        - /url: /football/england/premier-league-2023-2024/
+                    - generic [ref=e1646]:
+                      - generic [ref=e1647]: "1"
+                      - generic [ref=e1648]: X
+                      - generic [ref=e1649]: "2"
+                    - generic [ref=e1651]:
+                      - link "31/Dec Fulham Fulham 2 – 1 Arsenal Arsenal" [ref=e1652] [cursor=pointer]:
+                        - /url: /football/h2h/arsenal-hA1Zm19f/fulham-69ZiU2Om/#WtOSu8Je
+                        - generic [ref=e1653]:
+                          - paragraph [ref=e1657]: 31/Dec
+                          - generic [ref=e1660]:
+                            - generic "Fulham" [ref=e1661]:
+                              - img "Fulham" [ref=e1662]
+                              - paragraph [ref=e1664]: Fulham
+                            - generic [ref=e1666]:
+                              - generic [ref=e1667]: "2"
+                              - generic [ref=e1668]: –
+                              - generic [ref=e1669]: "1"
+                            - generic "Arsenal" [ref=e1670]:
+                              - img "Arsenal" [ref=e1671]
+                              - paragraph [ref=e1673]: Arsenal
+                      - paragraph [ref=e1678] [cursor=pointer]: "6.66"
+                      - paragraph [ref=e1682] [cursor=pointer]: "4.36"
+                      - paragraph [ref=e1686] [cursor=pointer]: "1.60"
+                  - generic [ref=e1689]:
+                    - link "26/Aug Arsenal Arsenal 2 – 2 Fulham Fulham" [ref=e1690] [cursor=pointer]:
+                      - /url: /football/h2h/arsenal-hA1Zm19f/fulham-69ZiU2Om/#6NOhpgz1
+                      - generic [ref=e1691]:
+                        - paragraph [ref=e1695]: 26/Aug
+                        - generic [ref=e1698]:
+                          - generic "Arsenal" [ref=e1699]:
+                            - img "Arsenal" [ref=e1700]
+                            - paragraph [ref=e1702]: Arsenal
+                          - generic [ref=e1704]:
+                            - generic [ref=e1705]: "2"
+                            - generic [ref=e1706]: –
+                            - generic [ref=e1707]: "2"
+                          - generic "Fulham" [ref=e1708]:
+                            - img "Fulham" [ref=e1709]
+                            - paragraph [ref=e1711]: Fulham
+                    - paragraph [ref=e1716] [cursor=pointer]: "1.30"
+                    - paragraph [ref=e1720] [cursor=pointer]: "6.50"
+                    - paragraph [ref=e1724] [cursor=pointer]: "13.50"
+                - generic [ref=e1725] [cursor=pointer]:
+                  - text: Show more
+                  - img [ref=e1726]
+          - generic [ref=e1728]:
+            - heading "Arsenal vs Fulham - Odds, Predictions and H2H Results" [level=1] [ref=e1730]
+            - generic [ref=e1731]:
+              - paragraph [ref=e1732]:
+                - paragraph [ref=e1733]:
+                  - strong [ref=e1734]:
+                    - strong [ref=e1735]: Arsenal
+                  - text: vs
+                  - strong [ref=e1736]:
+                    - strong [ref=e1737]: Fulham
+                  - text: will be a match that all
+                  - strong [ref=e1738]:
+                    - link "Premier League" [ref=e1740] [cursor=pointer]:
+                      - /url: /football/england/premier-league
+                      - strong [ref=e1741]: Premier League
+                  - text: fans and sports betting punters alike will be watching on
+                  - strong [ref=e1742]:
+                    - strong [ref=e1743]: 2026/5/3
+                  - text: at
+                  - strong [ref=e1744]:
+                    - strong [ref=e1745]: 00:30:00
+                  - text: and OddsPortal is here to supply you with all the information you need. Including an extensive gallery of different
+                  - strong [ref=e1746]:
+                    - link "Football" [ref=e1748] [cursor=pointer]:
+                      - /url: /football/
+                      - strong [ref=e1749]: Football
+                  - text: betting odds from several bookmakers, previous match results for each team, H2H results, predictions and match facts, this page provides all the information you need to make well-informed betting decisions.
+              - button "Show more" [ref=e1750] [cursor=pointer]
+    - contentinfo [ref=e1751]:
+      - generic [ref=e1752]:
+        - generic [ref=e1753]:
+          - generic [ref=e1754]:
+            - paragraph [ref=e1755]:
+              - link "football" [ref=e1756] [cursor=pointer]:
+                - /url: /football/
+            - list [ref=e1757]:
+              - listitem [ref=e1758]:
+                - link "Premier League" [ref=e1759] [cursor=pointer]:
+                  - /url: /football/england/premier-league/
+              - listitem [ref=e1760]:
+                - link "LaLiga EA Sports" [ref=e1761] [cursor=pointer]:
+                  - /url: /football/spain/laliga/
+              - listitem [ref=e1762]:
+                - link "Serie A" [ref=e1763] [cursor=pointer]:
+                  - /url: /football/italy/serie-a/
+              - listitem [ref=e1764]:
+                - link "Bundesliga" [ref=e1765] [cursor=pointer]:
+                  - /url: /football/germany/bundesliga/
+              - listitem [ref=e1766]:
+                - link "Ligue 1" [ref=e1767] [cursor=pointer]:
+                  - /url: /football/france/ligue-1/
+              - listitem [ref=e1768]:
+                - link "Champions League" [ref=e1769] [cursor=pointer]:
+                  - /url: /football/europe/champions-league/
+              - listitem [ref=e1770]:
+                - link "Europa League" [ref=e1771] [cursor=pointer]:
+                  - /url: /football/europe/europa-league/
+              - listitem [ref=e1772]:
+                - link "Europa Conference League" [ref=e1773] [cursor=pointer]:
+                  - /url: /football/europe/conference-league/
+          - generic [ref=e1774]:
+            - paragraph [ref=e1775]:
+              - link "tennis" [ref=e1776] [cursor=pointer]:
+                - /url: /tennis/
+            - list [ref=e1777]:
+              - listitem [ref=e1778]:
+                - link "ATP US Open" [ref=e1779] [cursor=pointer]:
+                  - /url: /tennis/usa/atp-us-open/
+              - listitem [ref=e1780]:
+                - link "ATP French Open" [ref=e1781] [cursor=pointer]:
+                  - /url: /tennis/france/atp-french-open/
+              - listitem [ref=e1782]:
+                - link "ATP Wimbledon" [ref=e1783] [cursor=pointer]:
+                  - /url: /tennis/united-kingdom/atp-wimbledon/
+              - listitem [ref=e1784]:
+                - link "ATP Australian Open" [ref=e1785] [cursor=pointer]:
+                  - /url: /tennis/australia/atp-australian-open/
+              - listitem [ref=e1786]:
+                - link "WTA US Open" [ref=e1787] [cursor=pointer]:
+                  - /url: /tennis/usa/wta-us-open/
+              - listitem [ref=e1788]:
+                - link "WTA French Open" [ref=e1789] [cursor=pointer]:
+                  - /url: /tennis/france/wta-french-open/
+              - listitem [ref=e1790]:
+                - link "WTA Wimbledon" [ref=e1791] [cursor=pointer]:
+                  - /url: /tennis/united-kingdom/wta-wimbledon/
+              - listitem [ref=e1792]:
+                - link "WTA Australian Open" [ref=e1793] [cursor=pointer]:
+                  - /url: /tennis/australia/wta-australian-open/
+          - generic [ref=e1794]:
+            - paragraph [ref=e1795]:
+              - link "basketball" [ref=e1796] [cursor=pointer]:
+                - /url: /basketball/
+            - list [ref=e1797]:
+              - listitem [ref=e1798]:
+                - link "NBA" [ref=e1799] [cursor=pointer]:
+                  - /url: /basketball/usa/nba/
+              - listitem [ref=e1800]:
+                - link "NCAA" [ref=e1801] [cursor=pointer]:
+                  - /url: /basketball/usa/ncaa/
+              - listitem [ref=e1802]:
+                - link "EuroLeague" [ref=e1803] [cursor=pointer]:
+                  - /url: /basketball/europe/euroleague/
+              - listitem [ref=e1804]:
+                - link "Super Lig" [ref=e1805] [cursor=pointer]:
+                  - /url: /basketball/turkey/super-lig/
+              - listitem [ref=e1806]:
+                - link "LNB" [ref=e1807] [cursor=pointer]:
+                  - /url: /basketball/france/lnb/
+              - listitem [ref=e1808]:
+                - link "Lega A" [ref=e1809] [cursor=pointer]:
+                  - /url: /basketball/italy/lega-a/
+              - listitem [ref=e1810]:
+                - link "BBL" [ref=e1811] [cursor=pointer]:
+                  - /url: /basketball/germany/bbl/
+              - listitem [ref=e1812]:
+                - link "ACB" [ref=e1813] [cursor=pointer]:
+                  - /url: /basketball/spain/acb/
+          - generic [ref=e1814]:
+            - paragraph [ref=e1815]: other
+            - list [ref=e1816]:
+              - listitem [ref=e1817]:
+                - link "NFL" [ref=e1818] [cursor=pointer]:
+                  - /url: /american-football/usa/nfl/
+              - listitem [ref=e1819]:
+                - link "NHL" [ref=e1820] [cursor=pointer]:
+                  - /url: /hockey/usa/nhl/
+              - listitem [ref=e1821]:
+                - link "MLB" [ref=e1822] [cursor=pointer]:
+                  - /url: /baseball/usa/mlb/
+              - listitem [ref=e1823]:
+                - link "Big Bash League" [ref=e1824] [cursor=pointer]:
+                  - /url: /cricket/australia/big-bash-league/
+              - listitem [ref=e1825]:
+                - link "AFL" [ref=e1826] [cursor=pointer]:
+                  - /url: /aussie-rules/australia/afl/
+              - listitem [ref=e1827]:
+                - link "SHL" [ref=e1828] [cursor=pointer]:
+                  - /url: /hockey/sweden/shl/
+              - listitem [ref=e1829]:
+                - link "NPB" [ref=e1830] [cursor=pointer]:
+                  - /url: /baseball/japan/npb/
+              - listitem [ref=e1831]:
+                - link "IPL" [ref=e1832] [cursor=pointer]:
+                  - /url: /cricket/india/ipl/
+          - generic [ref=e1833]:
+            - paragraph [ref=e1834]: popular now
+            - list [ref=e1835]:
+              - listitem [ref=e1836]:
+                - link "Saudi Professional League" [ref=e1837] [cursor=pointer]:
+                  - /url: /football/saudi-arabia/saudi-professional-league/
+              - listitem [ref=e1838]:
+                - link "UEFA Nations League" [ref=e1839] [cursor=pointer]:
+                  - /url: /football/europe/uefa-nations-league/
+              - listitem [ref=e1840]:
+                - link "World Championship 2026" [ref=e1841] [cursor=pointer]:
+                  - /url: /football/world/world-championship-2026/
+              - listitem [ref=e1842]:
+                - link "EuroBasket" [ref=e1843] [cursor=pointer]:
+                  - /url: /basketball/europe/eurobasket/
+              - listitem [ref=e1844]:
+                - link "Eredivisie" [ref=e1845] [cursor=pointer]:
+                  - /url: /football/netherlands/eredivisie/
+              - listitem [ref=e1846]:
+                - link "Esports" [ref=e1847] [cursor=pointer]:
+                  - /url: /esports/
+              - listitem [ref=e1848]:
+                - link "Darts Premier League" [ref=e1849] [cursor=pointer]:
+                  - /url: /darts/world/premier-league/
+              - listitem [ref=e1850]:
+                - link "Copa Libertadores" [ref=e1851] [cursor=pointer]:
+                  - /url: /football/south-america/copa-libertadores/
+          - generic [ref=e1852]:
+            - paragraph [ref=e1853]: Oddsportal
+            - list [ref=e1854]:
+              - listitem [ref=e1855]:
+                - link "Terms of Use" [ref=e1856] [cursor=pointer]:
+                  - /url: /terms/
+              - listitem [ref=e1857]:
+                - link "Privacy policy" [ref=e1858] [cursor=pointer]:
+                  - /url: /privacy-policy/
+              - listitem [ref=e1859]:
+                - link "GDPR" [ref=e1860] [cursor=pointer]:
+                  - /url: /gdpr/
+              - listitem [ref=e1861]:
+                - link "FAQ" [ref=e1862] [cursor=pointer]:
+                  - /url: /faq/
+              - listitem [ref=e1863]:
+                - link "Contact" [ref=e1864] [cursor=pointer]:
+                  - /url: /contact/
+              - listitem [ref=e1865]:
+                - link "Impressum" [ref=e1866] [cursor=pointer]:
+                  - /url: /impressum/
+            - list [ref=e1867]:
+              - listitem [ref=e1868]: Set privacy
+              - listitem [ref=e1869]:
+                - link "Recommended sites" [ref=e1870] [cursor=pointer]:
+                  - /url: /recommended/
+              - listitem [ref=e1871]:
+                - link "Bonus Offers" [ref=e1872] [cursor=pointer]:
+                  - /url: /bonus-offers/
+              - listitem [ref=e1873]:
+                - link "Bookmakers" [ref=e1874] [cursor=pointer]:
+                  - /url: /bookmakers/
+              - listitem [ref=e1875]:
+                - link "News" [ref=e1876] [cursor=pointer]:
+                  - /url: /news/
+          - generic [ref=e1877]:
+            - paragraph [ref=e1878]: partners
+            - list [ref=e1879]:
+              - listitem [ref=e1880]:
+                - link "SoccerVista" [ref=e1881] [cursor=pointer]:
+                  - /url: https://www.soccervista.com/
+              - listitem [ref=e1883]:
+                - link "Betexplorer" [ref=e1884] [cursor=pointer]:
+                  - /url: https://www.betexplorer.com/
+              - listitem [ref=e1886]:
+                - link "FCTables" [ref=e1887] [cursor=pointer]:
+                  - /url: https://www.fctables.com/
+              - listitem [ref=e1889]:
+                - link "Tribalfootball" [ref=e1890] [cursor=pointer]:
+                  - /url: https://www.tribalfootball.com/
+              - listitem [ref=e1892]:
+                - link "ScoreBar" [ref=e1893] [cursor=pointer]:
+                  - /url: https://www.scorebar.com/
+          - generic [ref=e1897]:
+            - generic [ref=e1898]:
+              - text: Gamble Responsibly.
+              - link "Gambling Therapy. 18+" [ref=e1899] [cursor=pointer]:
+                - /url: https://www.gamblingtherapy.org/
+            - generic [ref=e1901]:
+              - img "18+" [ref=e1902]
+              - link [ref=e1903] [cursor=pointer]:
+                - /url: https://www.begambleaware.org/
+              - generic [ref=e1904]: Please, gamble responsibly.
+            - generic [ref=e1905]:
+              - generic [ref=e1906]: Data by
+              - img
+        - generic [ref=e1907]: Copyright © 2008-2026 Oddsportal.com
+        - separator [ref=e1909]
+        - generic [ref=e1910]:
+          - link "img" [ref=e1912] [cursor=pointer]:
+            - /url: https://certify.gpwa.org/verify/oddsportal.com
+            - img "img" [ref=e1914]
+          - generic [ref=e1915]:
+            - link "img" [ref=e1916] [cursor=pointer]:
+              - /url: https://www.facebook.com/OddsPortal
+              - img "img" [ref=e1918]
+            - link "img" [ref=e1919] [cursor=pointer]:
+              - /url: https://www.twitter.com/oddsportal
+              - img "img" [ref=e1921]
+  - generic: Manage Preferences

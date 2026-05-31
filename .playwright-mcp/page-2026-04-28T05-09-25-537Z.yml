@@ -1,0 +1,775 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e7]:
+        - link "img" [ref=e11] [cursor=pointer]:
+          - /url: /
+          - img "img" [ref=e13]
+        - generic [ref=e14]:
+          - button "Search" [ref=e17] [cursor=pointer]
+          - generic [ref=e20]:
+            - img [ref=e22] [cursor=pointer]
+            - link "Cloudbet Get Cloudbet Welcome Package up to $2,500 Cash! Claim" [ref=e1197] [cursor=pointer]:
+              - /url: /bookmaker/cloudbet/gift-bonus/1263/
+              - img [ref=e1198]
+              - generic [ref=e1200]:
+                - generic [ref=e1201]:
+                  - img "Cloudbet" [ref=e1203]
+                  - img [ref=e1205]
+                - generic [ref=e1207]: Get Cloudbet Welcome Package up to $2,500 Cash!
+                - button "Claim" [ref=e1209]
+          - paragraph [ref=e27] [cursor=pointer]: MY LEAGUES
+          - generic [ref=e28] [cursor=pointer]:
+            - paragraph [ref=e32]: "0"
+            - paragraph [ref=e33]: My coupon
+      - list [ref=e38]:
+        - listitem [ref=e39]:
+          - link "img football" [ref=e40] [cursor=pointer]:
+            - /url: /football/
+            - img "img" [ref=e42]
+            - generic [ref=e43]: football
+        - listitem [ref=e44]:
+          - link "img basketball" [ref=e45] [cursor=pointer]:
+            - /url: /basketball/
+            - img "img" [ref=e47]
+            - generic [ref=e48]: basketball
+        - listitem [ref=e49]:
+          - link "img tennis" [ref=e50] [cursor=pointer]:
+            - /url: /tennis/
+            - img "img" [ref=e52]
+            - generic [ref=e53]: tennis
+        - listitem [ref=e54]:
+          - link "img baseball" [ref=e55] [cursor=pointer]:
+            - /url: /baseball/
+            - img "img" [ref=e57]
+            - generic [ref=e58]: baseball
+        - listitem [ref=e59]:
+          - link "img hockey" [ref=e60] [cursor=pointer]:
+            - /url: /hockey/
+            - img "img" [ref=e62]
+            - generic [ref=e63]: hockey
+        - listitem [ref=e64]:
+          - link "img american football" [ref=e65] [cursor=pointer]:
+            - /url: /american-football/
+            - img "img" [ref=e67]
+            - generic [ref=e68]: american football
+        - listitem [ref=e69]:
+          - link "img aussie rules" [ref=e70] [cursor=pointer]:
+            - /url: /aussie-rules/
+            - img "img" [ref=e72]
+            - generic [ref=e73]: aussie rules
+        - listitem [ref=e74]:
+          - link "img boxing" [ref=e75] [cursor=pointer]:
+            - /url: /boxing/
+            - img "img" [ref=e77]
+            - generic [ref=e78]: boxing
+        - listitem [ref=e79]:
+          - link "img cricket" [ref=e80] [cursor=pointer]:
+            - /url: /cricket/
+            - img "img" [ref=e82]
+            - generic [ref=e83]: cricket
+        - button "More" [ref=e85] [cursor=pointer]:
+          - generic [ref=e87]: More
+    - main [ref=e90]:
+      - generic [ref=e94]:
+        - generic [ref=e95]:
+          - link "22Bet Welcome Bonus 100% Up to 120 USD Claim" [ref=e96] [cursor=pointer]:
+            - /url: /bookmaker/22bet/bonus-offer-banner/749/
+            - generic [ref=e97]:
+              - img "22Bet" [ref=e99]
+              - generic [ref=e100]: Welcome Bonus 100% Up to 120
+              - generic [ref=e101]: USD
+            - button "Claim" [ref=e103]
+          - img [ref=e105]
+        - generic [ref=e107]:
+          - link "Roobet Premier League Bore Draw Claim" [ref=e108] [cursor=pointer]:
+            - /url: /bookmaker/roobet/bonus-offer-banner/1243/
+            - generic [ref=e109]:
+              - img "Roobet" [ref=e111]
+              - generic [ref=e112]: Premier League Bore Draw
+            - button "Claim" [ref=e114]
+          - img [ref=e116]
+        - generic [ref=e118]:
+          - link "888sport Get 100% First Bet Insurance BONUS Up To $250 On Your First BET! Claim" [ref=e119] [cursor=pointer]:
+            - /url: /bookmaker/888sport/bonus-offer-banner/1067/
+            - generic [ref=e120]:
+              - img "888sport" [ref=e122]
+              - generic [ref=e123]: Get 100% First Bet Insurance BONUS
+              - generic [ref=e124]: Up To $250 On Your First
+              - generic [ref=e125]: BET!
+            - button "Claim" [ref=e127]
+          - img [ref=e129]
+      - generic [ref=e131]:
+        - list [ref=e134]:
+          - listitem [ref=e135]:
+            - link "Home" [ref=e136] [cursor=pointer]:
+              - /url: /
+          - generic [ref=e137]: ">"
+          - listitem [ref=e138]:
+            - link "Football" [ref=e139] [cursor=pointer]:
+              - /url: /football/
+          - generic [ref=e140]: ">"
+          - listitem [ref=e141]:
+            - link "England" [ref=e142] [cursor=pointer]:
+              - /url: /football/england/
+          - generic [ref=e143]: ">"
+          - listitem [ref=e144]:
+            - paragraph [ref=e145]: Premier League
+        - generic [ref=e146]:
+          - generic [ref=e147]:
+            - img "198" [ref=e149]
+            - generic [ref=e151]: Premier League Betting Odds & Fixtures
+          - generic [ref=e153]:
+            - generic [ref=e155] [cursor=pointer]: Next Matches
+            - link "Outrights" [ref=e157] [cursor=pointer]:
+              - /url: /football/england/premier-league/outrights/
+              - generic [ref=e158]: Outrights
+            - link "Results" [ref=e160] [cursor=pointer]:
+              - /url: /football/england/premier-league/results/
+              - generic [ref=e161]: Results
+            - link "Standings" [ref=e163] [cursor=pointer]:
+              - /url: /football/england/premier-league/standings/
+              - generic [ref=e164]: Standings
+        - generic [ref=e165]:
+          - generic [ref=e166]:
+            - generic [ref=e167]:
+              - generic [ref=e168]:
+                - generic [ref=e169]:
+                  - link "Football Football" [ref=e170] [cursor=pointer]:
+                    - /url: /football/
+                    - img "Football" [ref=e172]
+                    - generic [ref=e173]: Football
+                  - generic [ref=e174]: /
+                  - link "198 England" [ref=e175] [cursor=pointer]:
+                    - /url: /football/england/
+                    - img "198" [ref=e176]
+                    - paragraph [ref=e177]: England
+                  - generic [ref=e178]: /
+                  - link "Premier League" [ref=e179] [cursor=pointer]:
+                    - /url: /football/england/premier-league/
+                - generic [ref=e180]:
+                  - generic [ref=e182]: 02 May 2026
+                  - generic [ref=e183]:
+                    - generic [ref=e184]: "1"
+                    - generic [ref=e185]: X
+                    - generic [ref=e186]: "2"
+                - generic [ref=e188]:
+                  - link "03:00 Leeds Leeds – Burnley Burnley" [ref=e189] [cursor=pointer]:
+                    - /url: /football/h2h/burnley-z3dmTMMO/leeds-tUxUbLR2/#EBUD9Jdk
+                    - generic [ref=e190]:
+                      - paragraph [ref=e194]: 03:00
+                      - generic [ref=e197]:
+                        - generic "Leeds" [ref=e198]:
+                          - img "Leeds" [ref=e199]
+                          - paragraph [ref=e201]: Leeds
+                        - generic [ref=e204]: –
+                        - generic "Burnley" [ref=e205]:
+                          - img "Burnley" [ref=e206]
+                          - paragraph [ref=e208]: Burnley
+                  - paragraph [ref=e214] [cursor=pointer]: "1.47"
+                  - paragraph [ref=e218] [cursor=pointer]: "4.95"
+                  - paragraph [ref=e222] [cursor=pointer]: "8.00"
+              - generic [ref=e225]:
+                - link "22:00 Brentford Brentford – West Ham West Ham" [ref=e226] [cursor=pointer]:
+                  - /url: /football/h2h/brentford-xYe7DwID/west-ham-Cxq57r8g/#EmnRINZ2
+                  - generic [ref=e227]:
+                    - paragraph [ref=e231]: 22:00
+                    - generic [ref=e234]:
+                      - generic "Brentford" [ref=e235]:
+                        - img "Brentford" [ref=e236]
+                        - paragraph [ref=e238]: Brentford
+                      - generic [ref=e241]: –
+                      - generic "West Ham" [ref=e242]:
+                        - img "West Ham" [ref=e243]
+                        - paragraph [ref=e245]: West Ham
+                - paragraph [ref=e251] [cursor=pointer]: "2.10"
+                - paragraph [ref=e255] [cursor=pointer]: "3.86"
+                - paragraph [ref=e259] [cursor=pointer]: "3.78"
+              - generic [ref=e262]:
+                - link "22:00 Newcastle Newcastle – Brighton Brighton" [ref=e263] [cursor=pointer]:
+                  - /url: /football/h2h/brighton-2XrRecc3/newcastle-utd-p6ahwuwJ/#tO58V0J8
+                  - generic [ref=e264]:
+                    - paragraph [ref=e268]: 22:00
+                    - generic [ref=e271]:
+                      - generic "Newcastle" [ref=e272]:
+                        - img "Newcastle" [ref=e273]
+                        - paragraph [ref=e275]: Newcastle
+                      - generic [ref=e278]: –
+                      - generic "Brighton" [ref=e279]:
+                        - img "Brighton" [ref=e280]
+                        - paragraph [ref=e282]: Brighton
+                - paragraph [ref=e288] [cursor=pointer]: "2.66"
+                - paragraph [ref=e292] [cursor=pointer]: "3.80"
+                - paragraph [ref=e296] [cursor=pointer]: "2.74"
+              - generic [ref=e298]:
+                - link "23:30 West Ham West Ham – Arsenal Arsenal" [ref=e299] [cursor=pointer]:
+                  - /url: /football/h2h/arsenal-0j2eUlMC/west-ham-EXCPojim/#Aonqhgqt
+                  - generic [ref=e300]:
+                    - paragraph [ref=e304]: 23:30
+                    - generic [ref=e307]:
+                      - generic "West Ham" [ref=e308]:
+                        - img "West Ham" [ref=e309]
+                        - paragraph [ref=e311]: West Ham
+                      - generic [ref=e314]: –
+                      - generic "Arsenal" [ref=e315]:
+                        - img "Arsenal" [ref=e316]
+                        - paragraph [ref=e318]: Arsenal
+                - paragraph [ref=e322]: "-"
+                - paragraph [ref=e325]: "-"
+                - paragraph [ref=e328]: "-"
+              - generic [ref=e331]:
+                - link "22:00 Wolves Wolves – Sunderland Sunderland" [ref=e332] [cursor=pointer]:
+                  - /url: /football/h2h/sunderland-WSzc94ws/wolves-j3Azpf5d/#xjaHTvlL
+                  - generic [ref=e333]:
+                    - paragraph [ref=e337]: 22:00
+                    - generic [ref=e340]:
+                      - generic "Wolves" [ref=e341]:
+                        - img "Wolves" [ref=e342]
+                        - paragraph [ref=e344]: Wolves
+                      - generic [ref=e347]: –
+                      - generic "Sunderland" [ref=e348]:
+                        - img "Sunderland" [ref=e349]
+                        - paragraph [ref=e351]: Sunderland
+                - paragraph [ref=e357] [cursor=pointer]: "3.27"
+                - paragraph [ref=e361] [cursor=pointer]: "3.50"
+                - paragraph [ref=e365] [cursor=pointer]: "2.40"
+              - generic [ref=e366]:
+                - generic [ref=e367]:
+                  - generic [ref=e369]: 03 May 2026
+                  - generic [ref=e370]:
+                    - generic [ref=e371]: "1"
+                    - generic [ref=e372]: X
+                    - generic [ref=e373]: "2"
+                - generic [ref=e375]:
+                  - link "00:30 Arsenal Arsenal – Fulham Fulham" [ref=e376] [cursor=pointer]:
+                    - /url: /football/h2h/arsenal-hA1Zm19f/fulham-69ZiU2Om/#6sw2IgOM
+                    - generic [ref=e377]:
+                      - paragraph [ref=e381]: 00:30
+                      - generic [ref=e384]:
+                        - generic "Arsenal" [ref=e385]:
+                          - img "Arsenal" [ref=e386]
+                          - paragraph [ref=e388]: Arsenal
+                        - generic [ref=e391]: –
+                        - generic "Fulham" [ref=e392]:
+                          - img "Fulham" [ref=e393]
+                          - paragraph [ref=e395]: Fulham
+                  - paragraph [ref=e401] [cursor=pointer]: "1.50"
+                  - generic [ref=e403]:
+                    - paragraph [ref=e405] [cursor=pointer]: "4.73"
+                    - heading "Add to my coupon" [level=3] [ref=e1211]
+                  - paragraph [ref=e409] [cursor=pointer]: "7.84"
+              - generic [ref=e412]:
+                - link "21:00 Bournemouth Bournemouth – Crystal Palace Crystal Palace" [ref=e413] [cursor=pointer]:
+                  - /url: /football/h2h/bournemouth-OtpNdwrc/crystal-palace-AovF1Mia/#buItBBGd
+                  - generic [ref=e414]:
+                    - paragraph [ref=e418]: 21:00
+                    - generic [ref=e421]:
+                      - generic "Bournemouth" [ref=e422]:
+                        - img "Bournemouth" [ref=e423]
+                        - paragraph [ref=e425]: Bournemouth
+                      - generic [ref=e428]: –
+                      - generic "Crystal Palace" [ref=e429]:
+                        - img "Crystal Palace" [ref=e430]
+                        - paragraph [ref=e432]: Crystal Palace
+                - paragraph [ref=e438] [cursor=pointer]: "1.71"
+                - paragraph [ref=e442] [cursor=pointer]: "4.41"
+                - paragraph [ref=e446] [cursor=pointer]: "5.10"
+              - generic [ref=e449]:
+                - link "22:30 Manchester Utd Manchester Utd – Liverpool Liverpool" [ref=e450] [cursor=pointer]:
+                  - /url: /football/h2h/liverpool-lId4TMwf/manchester-united-ppjDR086/#zRIM7cR1
+                  - generic [ref=e451]:
+                    - paragraph [ref=e455]: 22:30
+                    - generic [ref=e458]:
+                      - generic "Manchester Utd" [ref=e459]:
+                        - img "Manchester Utd" [ref=e460]
+                        - paragraph [ref=e462]: Manchester Utd
+                      - generic [ref=e465]: –
+                      - generic "Liverpool" [ref=e466]:
+                        - img "Liverpool" [ref=e467]
+                        - paragraph [ref=e469]: Liverpool
+                - paragraph [ref=e475] [cursor=pointer]: "2.46"
+                - paragraph [ref=e479] [cursor=pointer]: "4.02"
+                - paragraph [ref=e483] [cursor=pointer]: "2.85"
+              - generic [ref=e484]:
+                - generic [ref=e485]:
+                  - generic [ref=e487]: 04 May 2026
+                  - generic [ref=e488]:
+                    - generic [ref=e489]: "1"
+                    - generic [ref=e490]: X
+                    - generic [ref=e491]: "2"
+                - generic [ref=e493]:
+                  - link "02:00 Aston Villa Aston Villa – Tottenham Tottenham" [ref=e494] [cursor=pointer]:
+                    - /url: /football/h2h/aston-villa-W00wmLO0/tottenham-UDg08Ohm/#jFEYCXop
+                    - generic [ref=e495]:
+                      - paragraph [ref=e499]: 02:00
+                      - generic [ref=e502]:
+                        - generic "Aston Villa" [ref=e503]:
+                          - img "Aston Villa" [ref=e504]
+                          - paragraph [ref=e506]: Aston Villa
+                        - generic [ref=e509]: –
+                        - generic "Tottenham" [ref=e510]:
+                          - img "Tottenham" [ref=e511]
+                          - paragraph [ref=e513]: Tottenham
+                  - paragraph [ref=e519] [cursor=pointer]: "2.25"
+                  - paragraph [ref=e523] [cursor=pointer]: "3.84"
+                  - paragraph [ref=e527] [cursor=pointer]: "3.25"
+              - generic [ref=e530]:
+                - link "22:00 Chelsea Chelsea – Nottingham Nottingham" [ref=e531] [cursor=pointer]:
+                  - /url: /football/h2h/chelsea-4fGZN2oK/nottingham-UsushcZr/#n1pZG14F
+                  - generic [ref=e532]:
+                    - paragraph [ref=e536]: 22:00
+                    - generic [ref=e539]:
+                      - generic "Chelsea" [ref=e540]:
+                        - img "Chelsea" [ref=e541]
+                        - paragraph [ref=e543]: Chelsea
+                      - generic [ref=e546]: –
+                      - generic "Nottingham" [ref=e547]:
+                        - img "Nottingham" [ref=e548]
+                        - paragraph [ref=e550]: Nottingham
+                - paragraph [ref=e556] [cursor=pointer]: "1.76"
+                - paragraph [ref=e560] [cursor=pointer]: "4.15"
+                - paragraph [ref=e564] [cursor=pointer]: "4.93"
+              - generic [ref=e565]:
+                - generic [ref=e566]:
+                  - generic [ref=e568]: 05 May 2026
+                  - generic [ref=e569]:
+                    - generic [ref=e570]: "1"
+                    - generic [ref=e571]: X
+                    - generic [ref=e572]: "2"
+                - generic [ref=e574]:
+                  - link "03:00 Everton Everton – Manchester City Manchester City" [ref=e575] [cursor=pointer]:
+                    - /url: /football/h2h/everton-KluSTr9s/manchester-city-Wtn9Stg0/#rTwrFuZR
+                    - generic [ref=e576]:
+                      - paragraph [ref=e580]: 03:00
+                      - generic [ref=e583]:
+                        - generic "Everton" [ref=e584]:
+                          - img "Everton" [ref=e585]
+                          - paragraph [ref=e587]: Everton
+                        - generic [ref=e590]: –
+                        - generic "Manchester City" [ref=e591]:
+                          - img "Manchester City" [ref=e592]
+                          - paragraph [ref=e594]: Manchester City
+                  - paragraph [ref=e600] [cursor=pointer]: "6.75"
+                  - paragraph [ref=e604] [cursor=pointer]: "5.33"
+                  - paragraph [ref=e608] [cursor=pointer]: "1.50"
+              - generic [ref=e609]:
+                - generic [ref=e610]:
+                  - generic [ref=e612]: 09 May 2026
+                  - generic [ref=e613]:
+                    - generic [ref=e614]: "1"
+                    - generic [ref=e615]: X
+                    - generic [ref=e616]: "2"
+                - generic [ref=e618]:
+                  - link "19:30 Liverpool Liverpool – Chelsea Chelsea" [ref=e619] [cursor=pointer]:
+                    - /url: /football/h2h/chelsea-4fGZN2oK/liverpool-lId4TMwf/#8j1NPVnm
+                    - generic [ref=e620]:
+                      - paragraph [ref=e624]: 19:30
+                      - generic [ref=e627]:
+                        - generic "Liverpool" [ref=e628]:
+                          - img "Liverpool" [ref=e629]
+                          - paragraph [ref=e631]: Liverpool
+                        - generic [ref=e634]: –
+                        - generic "Chelsea" [ref=e635]:
+                          - img "Chelsea" [ref=e636]
+                          - paragraph [ref=e638]: Chelsea
+                  - paragraph [ref=e643] [cursor=pointer]: "1.98"
+                  - paragraph [ref=e647] [cursor=pointer]: "4.13"
+                  - paragraph [ref=e651] [cursor=pointer]: "3.80"
+              - generic [ref=e654]:
+                - link "22:00 Fulham Fulham – Bournemouth Bournemouth" [ref=e655] [cursor=pointer]:
+                  - /url: /football/h2h/bournemouth-OtpNdwrc/fulham-69ZiU2Om/#2iZkrv3E
+                  - generic [ref=e656]:
+                    - paragraph [ref=e660]: 22:00
+                    - generic [ref=e663]:
+                      - generic "Fulham" [ref=e664]:
+                        - img "Fulham" [ref=e665]
+                        - paragraph [ref=e667]: Fulham
+                      - generic [ref=e670]: –
+                      - generic "Bournemouth" [ref=e671]:
+                        - img "Bournemouth" [ref=e672]
+                        - paragraph [ref=e674]: Bournemouth
+                - paragraph [ref=e679] [cursor=pointer]: "2.60"
+                - paragraph [ref=e683] [cursor=pointer]: "4.02"
+                - paragraph [ref=e687] [cursor=pointer]: "2.62"
+              - generic [ref=e690]:
+                - link "22:00 Brighton Brighton – Wolves Wolves" [ref=e691] [cursor=pointer]:
+                  - /url: /football/h2h/brighton-2XrRecc3/wolves-j3Azpf5d/#YLpmOIBr
+                  - generic [ref=e692]:
+                    - paragraph [ref=e696]: 22:00
+                    - generic [ref=e699]:
+                      - generic "Brighton" [ref=e700]:
+                        - img "Brighton" [ref=e701]
+                        - paragraph [ref=e703]: Brighton
+                      - generic [ref=e706]: –
+                      - generic "Wolves" [ref=e707]:
+                        - img "Wolves" [ref=e708]
+                        - paragraph [ref=e710]: Wolves
+                - paragraph [ref=e715] [cursor=pointer]: "1.38"
+                - paragraph [ref=e719] [cursor=pointer]: "5.49"
+                - paragraph [ref=e723] [cursor=pointer]: "8.80"
+              - generic [ref=e726]:
+                - link "22:00 Sunderland Sunderland – Manchester Utd Manchester Utd" [ref=e727] [cursor=pointer]:
+                  - /url: /football/h2h/manchester-united-ppjDR086/sunderland-WSzc94ws/#dY8uKRGO
+                  - generic [ref=e728]:
+                    - paragraph [ref=e732]: 22:00
+                    - generic [ref=e735]:
+                      - generic "Sunderland" [ref=e736]:
+                        - img "Sunderland" [ref=e737]
+                        - paragraph [ref=e739]: Sunderland
+                      - generic [ref=e742]: –
+                      - generic "Manchester Utd" [ref=e743]:
+                        - img "Manchester Utd" [ref=e744]
+                        - paragraph [ref=e746]: Manchester Utd
+                - paragraph [ref=e751] [cursor=pointer]: "4.10"
+                - paragraph [ref=e755] [cursor=pointer]: "4.02"
+                - paragraph [ref=e759] [cursor=pointer]: "1.88"
+              - generic [ref=e760]:
+                - generic [ref=e761]:
+                  - generic [ref=e763]: 10 May 2026
+                  - generic [ref=e764]:
+                    - generic [ref=e765]: "1"
+                    - generic [ref=e766]: X
+                    - generic [ref=e767]: "2"
+                - generic [ref=e769]:
+                  - link "00:30 Manchester City Manchester City – Brentford Brentford" [ref=e770] [cursor=pointer]:
+                    - /url: /football/h2h/brentford-xYe7DwID/manchester-city-Wtn9Stg0/#4IfWN9Ha
+                    - generic [ref=e771]:
+                      - paragraph [ref=e775]: 00:30
+                      - generic [ref=e778]:
+                        - generic "Manchester City" [ref=e779]:
+                          - img "Manchester City" [ref=e780]
+                          - paragraph [ref=e782]: Manchester City
+                        - generic [ref=e785]: –
+                        - generic "Brentford" [ref=e786]:
+                          - img "Brentford" [ref=e787]
+                          - paragraph [ref=e789]: Brentford
+                  - paragraph [ref=e794] [cursor=pointer]: "1.36"
+                  - paragraph [ref=e798] [cursor=pointer]: "5.99"
+                  - paragraph [ref=e802] [cursor=pointer]: "9.00"
+              - generic [ref=e805]:
+                - link "21:00 Burnley Burnley – Aston Villa Aston Villa" [ref=e806] [cursor=pointer]:
+                  - /url: /football/h2h/aston-villa-W00wmLO0/burnley-z3dmTMMO/#UmvdMdte
+                  - generic [ref=e807]:
+                    - paragraph [ref=e811]: 21:00
+                    - generic [ref=e814]:
+                      - generic "Burnley" [ref=e815]:
+                        - img "Burnley" [ref=e816]
+                        - paragraph [ref=e818]: Burnley
+                      - generic [ref=e821]: –
+                      - generic "Aston Villa" [ref=e822]:
+                        - img "Aston Villa" [ref=e823]
+                        - paragraph [ref=e825]: Aston Villa
+                - paragraph [ref=e830] [cursor=pointer]: "5.26"
+                - paragraph [ref=e834] [cursor=pointer]: "4.27"
+                - paragraph [ref=e838] [cursor=pointer]: "1.65"
+              - generic [ref=e841]:
+                - link "21:00 Crystal Palace Crystal Palace – Everton Everton" [ref=e842] [cursor=pointer]:
+                  - /url: /football/h2h/crystal-palace-AovF1Mia/everton-KluSTr9s/#Med3KzB7
+                  - generic [ref=e843]:
+                    - paragraph [ref=e847]: 21:00
+                    - generic [ref=e850]:
+                      - generic "Crystal Palace" [ref=e851]:
+                        - img "Crystal Palace" [ref=e852]
+                        - paragraph [ref=e854]: Crystal Palace
+                      - generic [ref=e857]: –
+                      - generic "Everton" [ref=e858]:
+                        - img "Everton" [ref=e859]
+                        - paragraph [ref=e861]: Everton
+                - paragraph [ref=e866] [cursor=pointer]: "2.78"
+                - paragraph [ref=e870] [cursor=pointer]: "3.40"
+                - paragraph [ref=e874] [cursor=pointer]: "2.70"
+              - generic [ref=e877]:
+                - link "21:00 Nottingham Nottingham – Newcastle Newcastle" [ref=e878] [cursor=pointer]:
+                  - /url: /football/h2h/newcastle-utd-p6ahwuwJ/nottingham-UsushcZr/#xWhvMmnC
+                  - generic [ref=e879]:
+                    - paragraph [ref=e883]: 21:00
+                    - generic [ref=e886]:
+                      - generic "Nottingham" [ref=e887]:
+                        - img "Nottingham" [ref=e888]
+                        - paragraph [ref=e890]: Nottingham
+                      - generic [ref=e893]: –
+                      - generic "Newcastle" [ref=e894]:
+                        - img "Newcastle" [ref=e895]
+                        - paragraph [ref=e897]: Newcastle
+                - paragraph [ref=e902] [cursor=pointer]: "2.52"
+                - paragraph [ref=e906] [cursor=pointer]: "3.71"
+                - paragraph [ref=e910] [cursor=pointer]: "2.82"
+              - generic [ref=e913]:
+                - link "23:30 West Ham West Ham – Arsenal Arsenal" [ref=e914] [cursor=pointer]:
+                  - /url: /football/h2h/arsenal-hA1Zm19f/west-ham-Cxq57r8g/#8Cxbx9Wh
+                  - generic [ref=e915]:
+                    - paragraph [ref=e919]: 23:30
+                    - generic [ref=e922]:
+                      - generic "West Ham" [ref=e923]:
+                        - img "West Ham" [ref=e924]
+                        - paragraph [ref=e926]: West Ham
+                      - generic [ref=e929]: –
+                      - generic "Arsenal" [ref=e930]:
+                        - img "Arsenal" [ref=e931]
+                        - paragraph [ref=e933]: Arsenal
+                - paragraph [ref=e938] [cursor=pointer]: "5.00"
+                - paragraph [ref=e942] [cursor=pointer]: "4.27"
+                - paragraph [ref=e946] [cursor=pointer]: "1.68"
+              - generic [ref=e947]:
+                - generic [ref=e948]:
+                  - generic [ref=e950]: 12 May 2026
+                  - generic [ref=e951]:
+                    - generic [ref=e952]: "1"
+                    - generic [ref=e953]: X
+                    - generic [ref=e954]: "2"
+                - generic [ref=e956]:
+                  - link "03:00 Tottenham Tottenham – Leeds Leeds" [ref=e957] [cursor=pointer]:
+                    - /url: /football/h2h/leeds-tUxUbLR2/tottenham-UDg08Ohm/#nclkvV1t
+                    - generic [ref=e958]:
+                      - paragraph [ref=e962]: 03:00
+                      - generic [ref=e965]:
+                        - generic "Tottenham" [ref=e966]:
+                          - img "Tottenham" [ref=e967]
+                          - paragraph [ref=e969]: Tottenham
+                        - generic [ref=e972]: –
+                        - generic "Leeds" [ref=e973]:
+                          - img "Leeds" [ref=e974]
+                          - paragraph [ref=e976]: Leeds
+                  - paragraph [ref=e981] [cursor=pointer]: "2.15"
+                  - paragraph [ref=e985] [cursor=pointer]: "3.84"
+                  - paragraph [ref=e989] [cursor=pointer]: "3.35"
+            - generic [ref=e993] [cursor=pointer]: Add "Premier League" to My Leagues
+          - generic [ref=e996]:
+            - generic [ref=e998]:
+              - heading "Premier League 2025/2026 Odds, Fixtures, Live Scores, and Standings" [level=1] [ref=e999]:
+                - strong [ref=e1000]: Premier League 2025/2026 Odds, Fixtures, Live Scores, and Standings
+              - paragraph [ref=e1001]:
+                - text: Welcome to OddsPortal, your ultimate guide for football betting and Premier League odds. Here, you will find essential information on fixtures, live scores, standings, and dynamic odds comparisons for all Premier League matches, as well as Premier League winner odds.
+                - text: OddsPortal provides real-time
+                - link "football odds" [ref=e1002] [cursor=pointer]:
+                  - /url: /football/
+                - text: ", insights, and comparisons from the best"
+                - link "online bookmakers" [ref=e1003] [cursor=pointer]:
+                  - /url: /bookmakers/
+                - text: ", helping you make informed betting decisions."
+              - paragraph
+            - button "Show more" [ref=e1004] [cursor=pointer]
+    - contentinfo [ref=e1005]:
+      - generic [ref=e1006]:
+        - generic [ref=e1007]:
+          - generic [ref=e1008]:
+            - paragraph [ref=e1009]:
+              - link "football" [ref=e1010] [cursor=pointer]:
+                - /url: /football/
+            - list [ref=e1011]:
+              - listitem [ref=e1012]:
+                - link "Premier League" [ref=e1013] [cursor=pointer]:
+                  - /url: /football/england/premier-league/
+              - listitem [ref=e1014]:
+                - link "LaLiga EA Sports" [ref=e1015] [cursor=pointer]:
+                  - /url: /football/spain/laliga/
+              - listitem [ref=e1016]:
+                - link "Serie A" [ref=e1017] [cursor=pointer]:
+                  - /url: /football/italy/serie-a/
+              - listitem [ref=e1018]:
+                - link "Bundesliga" [ref=e1019] [cursor=pointer]:
+                  - /url: /football/germany/bundesliga/
+              - listitem [ref=e1020]:
+                - link "Ligue 1" [ref=e1021] [cursor=pointer]:
+                  - /url: /football/france/ligue-1/
+              - listitem [ref=e1022]:
+                - link "Champions League" [ref=e1023] [cursor=pointer]:
+                  - /url: /football/europe/champions-league/
+              - listitem [ref=e1024]:
+                - link "Europa League" [ref=e1025] [cursor=pointer]:
+                  - /url: /football/europe/europa-league/
+              - listitem [ref=e1026]:
+                - link "Europa Conference League" [ref=e1027] [cursor=pointer]:
+                  - /url: /football/europe/conference-league/
+          - generic [ref=e1028]:
+            - paragraph [ref=e1029]:
+              - link "tennis" [ref=e1030] [cursor=pointer]:
+                - /url: /tennis/
+            - list [ref=e1031]:
+              - listitem [ref=e1032]:
+                - link "ATP US Open" [ref=e1033] [cursor=pointer]:
+                  - /url: /tennis/usa/atp-us-open/
+              - listitem [ref=e1034]:
+                - link "ATP French Open" [ref=e1035] [cursor=pointer]:
+                  - /url: /tennis/france/atp-french-open/
+              - listitem [ref=e1036]:
+                - link "ATP Wimbledon" [ref=e1037] [cursor=pointer]:
+                  - /url: /tennis/united-kingdom/atp-wimbledon/
+              - listitem [ref=e1038]:
+                - link "ATP Australian Open" [ref=e1039] [cursor=pointer]:
+                  - /url: /tennis/australia/atp-australian-open/
+              - listitem [ref=e1040]:
+                - link "WTA US Open" [ref=e1041] [cursor=pointer]:
+                  - /url: /tennis/usa/wta-us-open/
+              - listitem [ref=e1042]:
+                - link "WTA French Open" [ref=e1043] [cursor=pointer]:
+                  - /url: /tennis/france/wta-french-open/
+              - listitem [ref=e1044]:
+                - link "WTA Wimbledon" [ref=e1045] [cursor=pointer]:
+                  - /url: /tennis/united-kingdom/wta-wimbledon/
+              - listitem [ref=e1046]:
+                - link "WTA Australian Open" [ref=e1047] [cursor=pointer]:
+                  - /url: /tennis/australia/wta-australian-open/
+          - generic [ref=e1048]:
+            - paragraph [ref=e1049]:
+              - link "basketball" [ref=e1050] [cursor=pointer]:
+                - /url: /basketball/
+            - list [ref=e1051]:
+              - listitem [ref=e1052]:
+                - link "NBA" [ref=e1053] [cursor=pointer]:
+                  - /url: /basketball/usa/nba/
+              - listitem [ref=e1054]:
+                - link "NCAA" [ref=e1055] [cursor=pointer]:
+                  - /url: /basketball/usa/ncaa/
+              - listitem [ref=e1056]:
+                - link "EuroLeague" [ref=e1057] [cursor=pointer]:
+                  - /url: /basketball/europe/euroleague/
+              - listitem [ref=e1058]:
+                - link "Super Lig" [ref=e1059] [cursor=pointer]:
+                  - /url: /basketball/turkey/super-lig/
+              - listitem [ref=e1060]:
+                - link "LNB" [ref=e1061] [cursor=pointer]:
+                  - /url: /basketball/france/lnb/
+              - listitem [ref=e1062]:
+                - link "Lega A" [ref=e1063] [cursor=pointer]:
+                  - /url: /basketball/italy/lega-a/
+              - listitem [ref=e1064]:
+                - link "BBL" [ref=e1065] [cursor=pointer]:
+                  - /url: /basketball/germany/bbl/
+              - listitem [ref=e1066]:
+                - link "ACB" [ref=e1067] [cursor=pointer]:
+                  - /url: /basketball/spain/acb/
+          - generic [ref=e1068]:
+            - paragraph [ref=e1069]: other
+            - list [ref=e1070]:
+              - listitem [ref=e1071]:
+                - link "NFL" [ref=e1072] [cursor=pointer]:
+                  - /url: /american-football/usa/nfl/
+              - listitem [ref=e1073]:
+                - link "NHL" [ref=e1074] [cursor=pointer]:
+                  - /url: /hockey/usa/nhl/
+              - listitem [ref=e1075]:
+                - link "MLB" [ref=e1076] [cursor=pointer]:
+                  - /url: /baseball/usa/mlb/
+              - listitem [ref=e1077]:
+                - link "Big Bash League" [ref=e1078] [cursor=pointer]:
+                  - /url: /cricket/australia/big-bash-league/
+              - listitem [ref=e1079]:
+                - link "AFL" [ref=e1080] [cursor=pointer]:
+                  - /url: /aussie-rules/australia/afl/
+              - listitem [ref=e1081]:
+                - link "SHL" [ref=e1082] [cursor=pointer]:
+                  - /url: /hockey/sweden/shl/
+              - listitem [ref=e1083]:
+                - link "NPB" [ref=e1084] [cursor=pointer]:
+                  - /url: /baseball/japan/npb/
+              - listitem [ref=e1085]:
+                - link "IPL" [ref=e1086] [cursor=pointer]:
+                  - /url: /cricket/india/ipl/
+          - generic [ref=e1087]:
+            - paragraph [ref=e1088]: popular now
+            - list [ref=e1089]:
+              - listitem [ref=e1090]:
+                - link "Saudi Professional League" [ref=e1091] [cursor=pointer]:
+                  - /url: /football/saudi-arabia/saudi-professional-league/
+              - listitem [ref=e1092]:
+                - link "UEFA Nations League" [ref=e1093] [cursor=pointer]:
+                  - /url: /football/europe/uefa-nations-league/
+              - listitem [ref=e1094]:
+                - link "World Championship 2026" [ref=e1095] [cursor=pointer]:
+                  - /url: /football/world/world-championship-2026/
+              - listitem [ref=e1096]:
+                - link "EuroBasket" [ref=e1097] [cursor=pointer]:
+                  - /url: /basketball/europe/eurobasket/
+              - listitem [ref=e1098]:
+                - link "Eredivisie" [ref=e1099] [cursor=pointer]:
+                  - /url: /football/netherlands/eredivisie/
+              - listitem [ref=e1100]:
+                - link "Esports" [ref=e1101] [cursor=pointer]:
+                  - /url: /esports/
+              - listitem [ref=e1102]:
+                - link "Darts Premier League" [ref=e1103] [cursor=pointer]:
+                  - /url: /darts/world/premier-league/
+              - listitem [ref=e1104]:
+                - link "Copa Libertadores" [ref=e1105] [cursor=pointer]:
+                  - /url: /football/south-america/copa-libertadores/
+          - generic [ref=e1106]:
+            - paragraph [ref=e1107]: Oddsportal
+            - list [ref=e1108]:
+              - listitem [ref=e1109]:
+                - link "Terms of Use" [ref=e1110] [cursor=pointer]:
+                  - /url: /terms/
+              - listitem [ref=e1111]:
+                - link "Privacy policy" [ref=e1112] [cursor=pointer]:
+                  - /url: /privacy-policy/
+              - listitem [ref=e1113]:
+                - link "GDPR" [ref=e1114] [cursor=pointer]:
+                  - /url: /gdpr/
+              - listitem [ref=e1115]:
+                - link "FAQ" [ref=e1116] [cursor=pointer]:
+                  - /url: /faq/
+              - listitem [ref=e1117]:
+                - link "Contact" [ref=e1118] [cursor=pointer]:
+                  - /url: /contact/
+              - listitem [ref=e1119]:
+                - link "Impressum" [ref=e1120] [cursor=pointer]:
+                  - /url: /impressum/
+            - list [ref=e1121]:
+              - listitem [ref=e1122]: Set privacy
+              - listitem [ref=e1123]:
+                - link "Recommended sites" [ref=e1124] [cursor=pointer]:
+                  - /url: /recommended/
+              - listitem [ref=e1125]:
+                - link "Bonus Offers" [ref=e1126] [cursor=pointer]:
+                  - /url: /bonus-offers/
+              - listitem [ref=e1127]:
+                - link "Bookmakers" [ref=e1128] [cursor=pointer]:
+                  - /url: /bookmakers/
+              - listitem [ref=e1129]:
+                - link "News" [ref=e1130] [cursor=pointer]:
+                  - /url: /news/
+          - generic [ref=e1131]:
+            - paragraph [ref=e1132]: partners
+            - list [ref=e1133]:
+              - listitem [ref=e1134]:
+                - link "SoccerVista" [ref=e1135] [cursor=pointer]:
+                  - /url: https://www.soccervista.com/
+              - listitem [ref=e1137]:
+                - link "Betexplorer" [ref=e1138] [cursor=pointer]:
+                  - /url: https://www.betexplorer.com/
+              - listitem [ref=e1140]:
+                - link "FCTables" [ref=e1141] [cursor=pointer]:
+                  - /url: https://www.fctables.com/
+              - listitem [ref=e1143]:
+                - link "Tribalfootball" [ref=e1144] [cursor=pointer]:
+                  - /url: https://www.tribalfootball.com/
+              - listitem [ref=e1146]:
+                - link "ScoreBar" [ref=e1147] [cursor=pointer]:
+                  - /url: https://www.scorebar.com/
+          - generic [ref=e1151]:
+            - generic [ref=e1152]:
+              - text: Gamble Responsibly.
+              - link "Gambling Therapy. 18+" [ref=e1153] [cursor=pointer]:
+                - /url: https://www.gamblingtherapy.org/
+            - generic [ref=e1155]:
+              - img "18+" [ref=e1156]
+              - link [ref=e1157] [cursor=pointer]:
+                - /url: https://www.begambleaware.org/
+              - generic [ref=e1158]: Please, gamble responsibly.
+            - generic [ref=e1159]:
+              - generic [ref=e1160]: Data by
+              - img [ref=e1161]
+        - generic [ref=e1162]: Copyright © 2008-2026 Oddsportal.com
+        - separator [ref=e1164]
+        - generic [ref=e1165]:
+          - link "img" [ref=e1167] [cursor=pointer]:
+            - /url: https://certify.gpwa.org/verify/oddsportal.com
+            - img "img" [ref=e1169]
+          - generic [ref=e1170]:
+            - link "img" [ref=e1171] [cursor=pointer]:
+              - /url: https://www.facebook.com/OddsPortal
+              - img "img" [ref=e1173]
+            - link "img" [ref=e1174] [cursor=pointer]:
+              - /url: https://www.twitter.com/oddsportal
+              - img "img" [ref=e1176]
+  - generic: Manage Preferences
