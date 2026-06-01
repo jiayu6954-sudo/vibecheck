@@ -241,10 +241,61 @@ export default function Home() {
       {/* 主内容 */}
       <div style={{ maxWidth: 760, margin: '0 auto', padding: '32px 20px' }}>
 
+        {/* 价值主张 */}
+        <div style={{ background: 'linear-gradient(135deg, #10a37f08 0%, #3b82f608 100%)', border: `1px solid ${C.greenBorder}`, borderRadius: 12, padding: '24px', marginBottom: 24 }}>
+          <div style={{ display: 'flex', alignItems: 'flex-start', gap: 16 }}>
+            <span style={{ fontSize: 32, lineHeight: 1 }}>🎯</span>
+            <div>
+              <h1 style={{ fontSize: 18, fontWeight: 600, color: C.text, margin: '0 0 8px' }}>
+                专治 AI 代码陷阱 — Claude 不会告诉你的问题
+              </h1>
+              <p style={{ fontSize: 13, color: C.textSub, margin: '0 0 12px', lineHeight: 1.6 }}>
+                Cursor、Copilot 生成的代码看起来能用？但可能隐藏了<strong>硬编码密钥、SQL注入、未处理异常</strong>等致命问题。
+              </p>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 4, fontSize: 12, color: C.green }}>
+                  <span>✓</span><span>AI 特有问题检测</span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 4, fontSize: 12, color: C.green }}>
+                  <span>✓</span><span>中文报告</span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 4, fontSize: 12, color: C.green }}>
+                  <span>✓</span><span>可复制的修复代码</span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 4, fontSize: 12, color: C.green }}>
+                  <span>✓</span><span>免费无限扫描</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 对比卡片 */}
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 24 }}>
+          <div style={{ background: C.bg, border: `1px solid ${C.border}`, borderRadius: 8, padding: '16px' }}>
+            <div style={{ fontSize: 12, color: C.textMuted, marginBottom: 8 }}>❌ 直接问 Claude</div>
+            <ul style={{ margin: 0, paddingLeft: 18, fontSize: 12, color: C.textSub, lineHeight: 1.8 }}>
+              <li>需要手动写提示词</li>
+              <li>输出格式不统一</li>
+              <li>无法追踪历史</li>
+              <li>每次 ¥0.26</li>
+            </ul>
+          </div>
+          <div style={{ background: 'linear-gradient(135deg, #10a37f08 0%, #3b82f608 100%)', border: `1px solid ${C.greenBorder}`, borderRadius: 8, padding: '16px' }}>
+            <div style={{ fontSize: 12, color: C.green, fontWeight: 500, marginBottom: 8 }}>✓ 用 VibeCheck</div>
+            <ul style={{ margin: 0, paddingLeft: 18, fontSize: 12, color: C.textSub, lineHeight: 1.8 }}>
+              <li>一键扫描，零配置</li>
+              <li>结构化报告 + 评分</li>
+              <li>保存扫描历史</li>
+              <li>每次 ¥0.005（52x 便宜）</li>
+            </ul>
+          </div>
+        </div>
+
         {/* 页头 */}
         <div style={{ marginBottom: 24 }}>
-          <h2 style={{ fontSize: 20, fontWeight: 600, color: C.text, margin: '0 0 4px' }}>Code Scanner</h2>
-          <p style={{ fontSize: 14, color: C.textSub, margin: 0 }}>Paste your AI-generated code and get a security + quality report in seconds.</p>
+          <h2 style={{ fontSize: 20, fontWeight: 600, color: C.text, margin: '0 0 4px' }}>开始扫描</h2>
+          <p style={{ fontSize: 14, color: C.textSub, margin: 0 }}>粘贴 AI 生成的代码，3 秒获得安全 + 质量报告</p>
         </div>
 
         {/* 输入卡片 */}
@@ -335,6 +386,64 @@ export default function Home() {
 
         {/* 扫描结果 */}
         {result && <ScanResult result={result} />}
+
+        {/* 真实案例展示（仅在没有扫描结果时显示） */}
+        {!result && !loading && (
+          <div style={{ marginTop: 24, background: C.bg, border: `1px solid ${C.border}`, borderRadius: 12, padding: '24px' }}>
+            <h3 style={{ fontSize: 16, fontWeight: 600, color: C.text, margin: '0 0 16px' }}>
+              🔍 VibeCheck 能发现什么？
+            </h3>
+
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+              {/* 案例 1 */}
+              <div style={{ borderLeft: `3px solid ${C.red}`, paddingLeft: 12 }}>
+                <div style={{ fontSize: 13, fontWeight: 500, color: C.text, marginBottom: 4 }}>
+                  🔴 硬编码密钥（Critical）
+                </div>
+                <div style={{ fontSize: 12, color: C.textSub, marginBottom: 8, lineHeight: 1.6 }}>
+                  AI 经常直接生成 <code style={{ background: C.bgSub, padding: '2px 6px', borderRadius: 4 }}>apiKey = "sk-..."</code>，导致密钥泄露风险
+                </div>
+                <pre style={{ background: C.bgSub, border: `1px solid ${C.border}`, borderRadius: 6, padding: '8px 10px', fontSize: 11, color: C.textSub, margin: 0, fontFamily: '"SF Mono","Fira Code",monospace' }}>
+{`- const apiKey = "sk-abc123";
++ const apiKey = process.env.API_KEY;`}
+                </pre>
+              </div>
+
+              {/* 案例 2 */}
+              <div style={{ borderLeft: `3px solid ${C.amber}`, paddingLeft: 12 }}>
+                <div style={{ fontSize: 13, fontWeight: 500, color: C.text, marginBottom: 4 }}>
+                  🟡 SQL 注入风险（High）
+                </div>
+                <div style={{ fontSize: 12, color: C.textSub, marginBottom: 8, lineHeight: 1.6 }}>
+                  AI 生成的查询经常直接拼接用户输入，易受 SQL 注入攻击
+                </div>
+                <pre style={{ background: C.bgSub, border: `1px solid ${C.border}`, borderRadius: 6, padding: '8px 10px', fontSize: 11, color: C.textSub, margin: 0, fontFamily: '"SF Mono","Fira Code",monospace' }}>
+{`- db.query(\`SELECT * FROM users WHERE id=\${userId}\`)
++ db.query('SELECT * FROM users WHERE id=?', [userId])`}
+                </pre>
+              </div>
+
+              {/* 案例 3 */}
+              <div style={{ borderLeft: `3px solid ${C.blue}`, paddingLeft: 12 }}>
+                <div style={{ fontSize: 13, fontWeight: 500, color: C.text, marginBottom: 4 }}>
+                  🔵 未处理的 Promise（Medium）
+                </div>
+                <div style={{ fontSize: 12, color: C.textSub, marginBottom: 8, lineHeight: 1.6 }}>
+                  AI 生成的异步代码常缺少错误处理，导致未捕获异常
+                </div>
+                <pre style={{ background: C.bgSub, border: `1px solid ${C.border}`, borderRadius: 6, padding: '8px 10px', fontSize: 11, color: C.textSub, margin: 0, fontFamily: '"SF Mono","Fira Code",monospace' }}>
+{`- await fetch(url);
++ await fetch(url).catch(err => console.error(err));`}
+                </pre>
+              </div>
+            </div>
+
+            <div style={{ marginTop: 16, padding: '12px', background: C.greenDim, border: `1px solid ${C.greenBorder}`, borderRadius: 8, fontSize: 12, color: C.textSub, lineHeight: 1.6 }}>
+              💡 <strong>为什么 Claude 不会主动检查？</strong><br/>
+              因为这些是它自己写代码时的"习惯"。就像你不会主动检查自己的盲区一样。
+            </div>
+          </div>
+        )}
 
       </div>
 
