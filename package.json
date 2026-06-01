@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "cross-env AI_PROVIDER=deepseek DEEPSEEK_API_KEY=sk-ce7acdde1cd74783833c3cf4c38fff37 next dev",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
