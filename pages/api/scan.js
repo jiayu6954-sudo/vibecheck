@@ -2,6 +2,17 @@ import Anthropic from '@anthropic-ai/sdk';
 import { HttpsProxyAgent } from 'https-proxy-agent';
 import { createClient } from '@supabase/supabase-js';
 
+// ═══════════════════════════════════════════════════════════
+// DUAL AI PROVIDER CONFIGURATION
+// ═══════════════════════════════════════════════════════════
+// China (Aliyun): DeepSeek API - Stable, cheap, no proxy needed
+// Overseas (Vercel): Claude API - Best quality, no firewall issues
+// Local Dev: Claude API with proxy
+// ═══════════════════════════════════════════════════════════
+
+const AI_PROVIDER = process.env.AI_PROVIDER || 'claude'; // 'claude' | 'deepseek'
+
+// Claude configuration
 const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
   // Only use proxy in local development (when NODE_ENV is not production)
@@ -212,6 +223,74 @@ async function saveScanHistory(userId, code, result) {
   });
 }
 
+// ═══════════════════════════════════════════════════════════
+// UNIFIED AI API CALLER
+// ═══════════════════════════════════════════════════════════
+
+async function callAI(prompt, systemPrompt) {
+  console.log(`[AI] Using provider: ${AI_PROVIDER}`);
+
+  if (AI_PROVIDER === 'deepseek') {
+    // DeepSeek API (OpenAI-compatible format)
+    console.log('[DeepSeek] Calling API...');
+
+    const requestBody = {
+      model: 'deepseek-chat',
+      messages: [
+        { role: 'system', content: systemPrompt },
+        { role: 'user', content: prompt }
+      ],
+      temperature: 0.2,
+      max_tokens: 4096,
+      stream: false
+    };
+
+    try {
+      const response = await fetch('https://api.deepseek.com/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`
+        },
+        body: JSON.stringify(requestBody)
+      });
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error('[DeepSeek] API error:', response.status, errorText);
+        throw new Error(`DeepSeek API error (${response.status}): ${errorText}`);
+      }
+
+      const data = await response.json();
+      console.log('[DeepSeek] Response received');
+
+      // DeepSeek returns complete message, add opening brace for consistency
+      const rawJson = data.choices[0].message.content;
+      return rawJson.trim().startsWith('{') ? rawJson : '{' + rawJson;
+
+    } catch (error) {
+      console.error('[DeepSeek] Request failed:', error);
+      throw error;
+    }
+
+  } else {
+    // Claude API (original logic)
+    const message = await anthropic.messages.create({
+      model: 'claude-sonnet-4-20250514',
+      max_tokens: 4096,
+      temperature: 0.2,
+      system: systemPrompt,
+      messages: [
+        { role: 'user', content: prompt },
+        { role: 'assistant', content: '{' } // Prefilling
+      ],
+    });
+
+    const rawJson = '{' + message.content[0].text;
+    return rawJson;
+  }
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
@@ -223,8 +302,12 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Code is required' });
   }
 
-  if (!process.env.ANTHROPIC_API_KEY) {
-    return res.status(500).json({ error: 'API key not configured' });
+  // Check API key based on provider
+  if (AI_PROVIDER === 'deepseek' && !process.env.DEEPSEEK_API_KEY) {
+    return res.status(500).json({ error: 'DeepSeek API key not configured' });
+  }
+  if (AI_PROVIDER === 'claude' && !process.env.ANTHROPIC_API_KEY) {
+    return res.status(500).json({ error: 'Claude API key not configured' });
   }
 
   // ═══════════════════════════════════════════════════════════
@@ -260,26 +343,11 @@ export default async function handler(req, res) {
   // (Frontend will use localStorage for soft limit)
 
   try {
-    // Prefilling technique: force JSON output by starting assistant message with "{"
-    const message = await anthropic.messages.create({
-      model: 'claude-sonnet-4-20250514',
-      max_tokens: 4096,
-      temperature: 0.2, // Lower temperature for more consistent output
-      system: SYSTEM_PROMPT,
-      messages: [
-        {
-          role: 'user',
-          content: createScanPrompt(code, language, outputLang),
-        },
-        {
-          role: 'assistant',
-          content: '{', // Prefilling - Claude will continue from here, skipping any preamble
-        },
-      ],
-    });
-
-    // Reconstruct the JSON by adding back the opening brace
-    const rawJson = '{' + message.content[0].text;
+    // Call unified AI API (DeepSeek or Claude based on AI_PROVIDER)
+    const rawJson = await callAI(
+      createScanPrompt(code, language, outputLang),
+      SYSTEM_PROMPT
+    );
 
     // Parse the JSON response
     let result;
