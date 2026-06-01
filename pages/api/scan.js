@@ -228,35 +228,50 @@ async function saveScanHistory(userId, code, result) {
 // ═══════════════════════════════════════════════════════════
 
 async function callAI(prompt, systemPrompt) {
+  console.log(`[AI] Using provider: ${AI_PROVIDER}`);
+
   if (AI_PROVIDER === 'deepseek') {
     // DeepSeek API (OpenAI-compatible format)
-    const response = await fetch('https://api.deepseek.com/v1/chat/completions', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`
-      },
-      body: JSON.stringify({
-        model: 'deepseek-chat',
-        messages: [
-          { role: 'system', content: systemPrompt },
-          { role: 'user', content: prompt },
-          { role: 'assistant', content: '{' } // Prefilling for JSON output
-        ],
-        temperature: 0.2,
-        max_tokens: 4096,
-        response_format: { type: 'json_object' }
-      })
-    });
+    console.log('[DeepSeek] Calling API...');
 
-    if (!response.ok) {
-      const error = await response.json();
-      throw new Error(`DeepSeek API error: ${error.error?.message || response.statusText}`);
+    const requestBody = {
+      model: 'deepseek-chat',
+      messages: [
+        { role: 'system', content: systemPrompt },
+        { role: 'user', content: prompt }
+      ],
+      temperature: 0.2,
+      max_tokens: 4096,
+      stream: false
+    };
+
+    try {
+      const response = await fetch('https://api.deepseek.com/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`
+        },
+        body: JSON.stringify(requestBody)
+      });
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error('[DeepSeek] API error:', response.status, errorText);
+        throw new Error(`DeepSeek API error (${response.status}): ${errorText}`);
+      }
+
+      const data = await response.json();
+      console.log('[DeepSeek] Response received');
+
+      // DeepSeek returns complete message, add opening brace for consistency
+      const rawJson = data.choices[0].message.content;
+      return rawJson.trim().startsWith('{') ? rawJson : '{' + rawJson;
+
+    } catch (error) {
+      console.error('[DeepSeek] Request failed:', error);
+      throw error;
     }
-
-    const data = await response.json();
-    const rawJson = '{' + data.choices[0].message.content;
-    return rawJson;
 
   } else {
     // Claude API (original logic)
