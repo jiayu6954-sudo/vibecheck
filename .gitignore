@@ -34,3 +34,20 @@ yarn-error.log*
 next-env.d.ts
 
 .vercel
+
+# Internal documentation (keep local only)
+PRODUCT_STRATEGY.md
+PROMOTION_PLAN.md
+DEEPSEEK_SETUP.md
+DEPLOY_CHECKLIST.md
+DEPLOYMENT.md
+INVITE_CODES.md
+test-cases.md
+WORKFLOW.md
+promotion/
+diagnose.ps1
+deploy.ps1
+
+# Temporary files
+*.txt
+temp_*
