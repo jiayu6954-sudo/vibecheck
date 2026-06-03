@@ -62,3 +62,8 @@ fix-*.sql
 temp_*
 index_new.js
 *-published.png
+
+# Test logs
+.playwright-mcp/
+playwright-report/
+test-results/
