@@ -47,7 +47,18 @@ WORKFLOW.md
 promotion/
 diagnose.ps1
 deploy.ps1
+*.html
+
+# Deployment scripts (sensitive)
+deploy-*.sh
+deploy-*.ps1
+fix-*.sql
+
+# Local scripts
+*.bat
 
 # Temporary files
 *.txt
 temp_*
+index_new.js
+*-published.png
